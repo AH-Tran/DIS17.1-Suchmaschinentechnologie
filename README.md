@@ -1,2 +1,3 @@
 # DIS17.1-Suchmaschinentechnologie
-Projekt
+Cooles Projekt
+Mehr Infos später
