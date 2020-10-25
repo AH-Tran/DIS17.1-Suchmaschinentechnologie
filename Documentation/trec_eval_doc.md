@@ -2,7 +2,6 @@
 ###  Trec_Eval_Doc
 Evaluate **qrel_file** with **results_file**    
 ```
-```html
 $ ./trec_eval [-q] [-m measure] qrel_file results_file
 ```
 **trec_eval format**
