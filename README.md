@@ -45,7 +45,7 @@ Document development with LateX
 https://www.overleaf.com/project/5f881fd0d2a2ac0001ba9af3  
 Email: Dis17_search@outlook.com  
 PW: zsh17seo  
-**Project Timeline**  
+**Project Timeline:**  
 https://app.asana.com/0/1198889708166349/list
 
 ## 6. Presentation
