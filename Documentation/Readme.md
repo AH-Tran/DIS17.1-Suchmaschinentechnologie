@@ -1,25 +1,9 @@
-# Readme_Masterfile 
+# Documentation & Decisions
 
-## 1. MVP
-- [x] Install Elastic + Kibana
-- [ ] Install trec_eval
-- [x] Import metadata.csv into Kibana
-- [x] Index metadata.csv
-- [ ] Execute all 50 queries in topic on metadata.csv
-- [ ] Import search results
-- [ ] Transform search results into trec_eval format
-- [ ] Evaluate SR with trec_eval
+##  1. Design Decisions
+TBD
 
-## 2. Further Development
-- [ ] Apply **3. How to improve Rankings**
-- [ ] Automate with Python + Jupiter Notebook
-	- [ ] Query to Elastic
-	- [ ] Get Search Result from Elastic
-	- [ ] Transform Result into trec_eval format
-	- [ ] Union the results into one result file
-	- [ ] Evaluate result file with trec_evall
-
-##  3. How to improve Rankings
+##  2. Improving Rankings
 - [ ] Thesauri (Synonym, Polysemi)
 	- [ ] [https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-tokenfilter.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-tokenfilter.html)
 	- [ ] [https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-graph-tokenfilter.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-graph-tokenfilter.html)
@@ -32,7 +16,7 @@
 - [ ] Stemming
 	- [ ] -   [https://www.elastic.co/guide/en/elasticsearch/reference/current/stemming.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/stemming.html)
 
-## 4. Documentation
+## 3. Documentation
 Document development with LateX
 - [ ] General Project Structure
 - [ ] Approach and Models to improve Results
