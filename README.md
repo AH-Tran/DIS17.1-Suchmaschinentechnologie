@@ -7,7 +7,7 @@
 - [x] Index metadata.csv
 - [ ] Execute all 50 queries in topic on metadata.csv
 - [ ] Import search results
-- [ ] Transform search results into [https://github.com/AH-Tran/DIS17.1-Suchmaschinentechnologie/blob/main/Documentation/trec_eval_doc.md](trec_eval format)
+- [ ] Transform search results into [trec_eval_format](https://github.com/AH-Tran/DIS17.1-Suchmaschinentechnologie/blob/main/Documentation/trec_eval_doc.md)
 - [ ] Evaluate search results with trec_eval
 
 ### 2. Further Development
