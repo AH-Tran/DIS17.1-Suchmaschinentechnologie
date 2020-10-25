@@ -1,6 +1,6 @@
 # Readme_Masterfile 
 
-## 1. MVP
+### 1. MVP
 - [x] Install Elastic + Kibana
 - [ ] Install trec_eval
 - [x] Import metadata.csv into Kibana
@@ -10,7 +10,7 @@
 - [ ] Transform search results into trec_eval format
 - [ ] Evaluate SR with trec_eval
 
-## 2. Further Development
+### 2. Further Development
 - [ ] Apply **3. How to improve Rankings**
 - [ ] Automate with Python + Jupiter Notebook
 	- [ ] Query to Elastic
@@ -19,7 +19,7 @@
 	- [ ] Union the results into one result file
 	- [ ] Evaluate result file with trec_evall
 
-##  3. How to improve Rankings
+###  3. How to improve Rankings
 - [ ] Thesauri (Synonym, Polysemi)
 	- [ ] [https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-tokenfilter.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-tokenfilter.html)
 	- [ ] [https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-graph-tokenfilter.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-graph-tokenfilter.html)
@@ -32,7 +32,7 @@
 - [ ] Stemming
 	- [ ] -   [https://www.elastic.co/guide/en/elasticsearch/reference/current/stemming.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/stemming.html)
 
-## 4. Documentation
+### 4. Documentation
 Document development with LateX
 - [ ] General Project Structure
 - [ ] Approach and Models to improve Results
@@ -48,15 +48,15 @@ PW: zsh17seo
 **Project Timeline:**  
 https://app.asana.com/0/1198889708166349/list
 
-## 6. Presentation
+### 6. Presentation
 
 TBD
 
-## 8. Literature
+### 7. Literature
 - [https://qa.fastforwardlabs.com/elasticsearch/qa%20system%20design/passage%20ranking/masked%20language%20model/word%20embeddings/2020/07/22/Improving_the_Retriever_on_Natural_Questions.html](https://qa.fastforwardlabs.com/elasticsearch/qa%20system%20design/passage%20ranking/masked%20language%20model/word%20embeddings/2020/07/22/Improving_the_Retriever_on_Natural_Questions.html)
 - [https://qa.fastforwardlabs.com/elasticsearch/mean%20average%20precision/recall%20for%20irqa/qa%20system%20design/2020/06/30/Evaluating_the_Retriever_&_End_to_End_System.html](https://qa.fastforwardlabs.com/elasticsearch/mean%20average%20precision/recall%20for%20irqa/qa%20system%20design/2020/06/30/Evaluating_the_Retriever_&_End_to_End_System.html)
 
-## MISC: Interesting Examples:
+### MISC > Interesting Examples:
 Elastic + Trec_Eval as with complete frontend+backend with vue
 [https://git.informatik.uni-leipzig.de/js35jisu/recipe-search2](https://git.informatik.uni-leipzig.de/js35jisu/recipe-search2)
 
