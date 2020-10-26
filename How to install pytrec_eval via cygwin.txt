@@ -1,0 +1,10 @@
+ 1.) Download cygwin from https://www.cygwin.com/
+ 2.) Install from internet
+ 3.) Direct Connection
+ 4.) download from https://cygwin.mirror.constant.com
+ 5.) Package to install: automake, gcc-tools-epoch1-automake, gcc-tools-epoch2-automake, gccmakedep, git, make
+ 6.) download trec_eval-9.0.7 from https://trec.nist.gov/trec_eval/
+ 7.) Copy the cygwin1.dll from your cygwin folder into your trec_eval-9.07 folder
+ 8.) Start cygwin64 Terminal
+ 9.) Go to your trec_eval-9.0.7 folder via cd \
+10.) Type make into the Terminal
