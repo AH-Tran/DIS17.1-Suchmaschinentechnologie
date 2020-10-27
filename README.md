@@ -2,7 +2,7 @@
 
 ### 1. MVP
 - [x] Install Elastic + Kibana
-- [ ] Install trec_eval
+- [x] Install trec_eval
 - [x] Import metadata.csv into Kibana
 - [x] Index metadata.csv
 - [ ] Execute all 50 queries in topic on metadata.csv
