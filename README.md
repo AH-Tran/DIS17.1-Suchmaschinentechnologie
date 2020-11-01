@@ -5,10 +5,10 @@
 - [x] Install trec_eval
 - [x] Import metadata.csv into Kibana
 - [x] Index metadata.csv
-- [ ] Execute all 50 queries in topic on metadata.csv
-- [ ] Import search results
-- [ ] Transform search results into [trec_eval_format](https://github.com/AH-Tran/DIS17.1-Suchmaschinentechnologie/blob/main/Documentation/trec_eval_doc.md)
-- [ ] Evaluate search results with trec_eval
+- [x] Execute all 50 queries in topic on metadata.csv
+- [x] Import search results
+- [x] Transform search results into [trec_eval_format](https://github.com/AH-Tran/DIS17.1-Suchmaschinentechnologie/blob/main/Documentation/trec_eval_doc.md)
+- [x] Evaluate search results with trec_eval
 
 ### 2. Further Development
 - [ ] Apply **3. How to improve Rankings**
@@ -17,7 +17,7 @@
 	- [ ] Get Search Result from Elastic
 	- [ ] Transform Result into trec_eval format
 	- [ ] Union the results into one result file
-	- [ ] Evaluate result file with trec_evall
+	- [ ] Evaluate result file with trec_eval
 
 ###  3. How to improve Rankings
 - [ ] Thesauri (Synonym, Polysemi)
@@ -31,7 +31,8 @@
 	- [ ] [https://drowning.gitbooks.io/elasticsearch/content/220_Token_normalization/40_Case_folding.html](https://drowning.gitbooks.io/elasticsearch/content/220_Token_normalization/40_Case_folding.html)
 - [ ] Stemming
 	- [ ] -   [https://www.elastic.co/guide/en/elasticsearch/reference/current/stemming.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/stemming.html)
-
+- [ ] Weights
+	- [ ] Genetic Algorithm
 ### 4. Documentation
 Document development with LateX
 - [ ] General Project Structure
@@ -80,3 +81,6 @@ Searchrequest API(Java)
 Querystrings(Elastic)
 [https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html)
 
+Covid19 Protein Thesaurus  
+
+[https://www.cas.org/covid-19-thesaurus-completed](https://www.cas.org/covid-19-thesaurus-completed)
