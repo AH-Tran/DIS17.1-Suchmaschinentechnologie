@@ -29,14 +29,18 @@ def search(collection_index, formatted_query_list):
     liste_strings = []
     #myfile = open("results.txt", 'w')
     for i in range(len(formatted_query_list)):
+        id_list = []
         elastic_client = Elasticsearch()
-        response = elastic_client.search(index=collection_index, body=json.dumps(formatted_query_list[i]), size=50)
+        response = elastic_client.search(index=collection_index, body=json.dumps(formatted_query_list[i]), size=1000    )
 
         #print("Num\titeration\t\tTitle\t\tRelevance Score")
         for idx, hit in enumerate(response['hits']['hits']):
-            string = str(i+1) + " " + "Q0" + " " + str(hit['_source']['cord_uid']) + " " + str(idx) + " " + str(hit['_score']) + " Standard"
-            liste_strings.append(string)
-
+            if str(hit['_source']['cord_uid']) not in id_list:
+                id_list.append(hit['_source']['cord_uid'])
+                string = str(i+1) + " " + "Q0" + " " + str(hit['_source']['cord_uid']) + " " + str(idx) + " " + str(hit['_score']) + " Standard"
+                liste_strings.append(string)
+            else:
+                continue
     myfile = open("results.txt", 'w', encoding="utf-8", newline='\n')
 
     for i in range(len(liste_strings)):
