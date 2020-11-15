@@ -21,12 +21,13 @@
 
 ###  3. How to improve Rankings
 - [ ] Indexing
-	- [ ] Metadata.csv analysieren
-	- [ ] Sprachen
-	- [ ]  Häufigste Wörter
-	- [ ]  Seltenste Wörter mit hoher Frequenz in einzelnen dokumenten
-	- [ ] Stopwörterliste für medizinische Literatur
-	- [ ]  Vereinigen mit nltk_stopwords.txt
+	- [ ] Analyse Metadata.csv
+	- [ ] Find different Languages in Metadata.csv
+	- [ ] Most frequent words
+	- [ ] Most rare words with high frequency in single documents
+	- [ ] Stopword_list for different languages
+	- [ ] Vereinigen mit nltk_stopwords.txt
+	- [ ] Inverse Application of diffferent stopword_lists for different languages
 - [ ] Thesauri (Synonym, Polysemi)
 	- [ ] [https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-tokenfilter.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-tokenfilter.html)
 	- [ ] [https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-graph-tokenfilter.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-graph-tokenfilter.html)
