@@ -20,6 +20,13 @@
 	- [ ] Evaluate result file with trec_eval
 
 ###  3. How to improve Rankings
+- [ ] Indexing
+	- [ ] Metadata.csv analysieren
+	- [ ] Sprachen
+	- [ ]  Häufigste Wörter
+	- [ ]  Seltenste Wörter mit hoher Frequenz in einzelnen dokumenten
+	- [ ] Stopwörterliste für medizinische Literatur
+	- [ ]  Vereinigen mit nltk_stopwords.txt
 - [ ] Thesauri (Synonym, Polysemi)
 	- [ ] [https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-tokenfilter.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-tokenfilter.html)
 	- [ ] [https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-graph-tokenfilter.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-graph-tokenfilter.html)
