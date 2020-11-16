@@ -21,8 +21,8 @@
 
 ###  3. How to improve Rankings
 - [ ] Indexing
+- [ ] Stopword Lists
 	- [ ] Analyse Metadata.csv
-	- [ ] Find different Languages in Metadata.csv
 	- [ ] Most frequent words
 	- [ ] Most rare words with high frequency in single documents
 	- [ ] Stopword_list for different languages
