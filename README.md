@@ -26,6 +26,7 @@
 	- [ ] Most frequent words
 	- [ ] Most rare words with high frequency in single documents
 	- [ ] Stopword_list for different languages
+		- [ ] Identify Languages with [https://github.com/saffsd/langid.py](https://github.com/saffsd/langid.py)
 	- [ ] Vereinigen mit nltk_stopwords.txt
 	- [ ] Inverse Application of diffferent stopword_lists for different languages
 - [ ] Thesauri (Synonym, Polysemi)
