@@ -27,6 +27,8 @@
 	- [ ] Most rare words with high frequency in single documents
 	- [ ] Stopword_list for different languages
 		- [ ] Identify Languages with [https://github.com/saffsd/langid.py](https://github.com/saffsd/langid.py)
+		- [ ] NLP Tool [https://spacy.io/](spacy)
+		- [ ] NLTK library [https://www.nltk.org/](https://www.nltk.org/)
 	- [ ] Vereinigen mit nltk_stopwords.txt
 	- [ ] Inverse Application of diffferent stopword_lists for different languages
 - [ ] Thesauri (Synonym, Polysemi)
