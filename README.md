@@ -1,4 +1,8 @@
 # Readme_Masterfile 
+### 0- TO DO
+- [ ] [https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-custom-analyzer.html] (https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-custom-analyzer.html)
+	- [] Read Custom_analyzer for Tokens, Filters, ETC
+	- [] Read up on Ingestion Nodes (Tran)
 
 ### 1. MVP
 - [x] Install Elastic + Kibana
