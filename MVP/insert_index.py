@@ -1,4 +1,4 @@
-from elasticsearch import Elasticsearch
+from elasticsearch import Elasticsearch, helpers
 from elasticsearch.helpers import bulk
 from datetime import datetime
 import os, uuid
@@ -49,6 +49,12 @@ settings={
     },
     "mappings": {
         "properties": {
+            "title": {
+                "type": "text"
+            },
+            "abstract": {
+                "type": "text"
+            },
             "publish_time": {
                 "type": "text"
             }
@@ -57,7 +63,11 @@ settings={
 }
 
 ## Create Index
-es.indices.create(index="covid", ignore=400, body=settings)
+es.indices.create(index="covid_index", ignore=400, body=settings)
+es.indices.analyze(index='covid_index', ignore=400, body=settings)
 
 ## Index Documents
-bulk(es, index="covid_index", doc_type="_doc", request_timeout=60, raise_on_error=True)
+#bulk(es, index="covid_index", doc_type="_doc", request_timeout=60, raise_on_error=False)
+with open("./MVP/metadata.csv", "r", encoding="utf8") as f:
+    reader = csv.DictReader(f)
+    helpers.bulk(es, reader, index='covid_index',raise_on_error=False, stats_only=False)
