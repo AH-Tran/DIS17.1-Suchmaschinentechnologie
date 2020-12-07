@@ -50,10 +50,12 @@ settings={
     "mappings": {
         "properties": {
             "title": {
-                "type": "text"
+                "type": "text",
+                "analyzer": "covid_analyzer"
             },
             "abstract": {
-                "type": "text"
+                "type": "text",
+                "analyzer": "covid_analyzer"
             },
             "publish_time": {
                 "type": "text"
