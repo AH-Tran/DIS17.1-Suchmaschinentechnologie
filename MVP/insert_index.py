@@ -41,7 +41,7 @@ settings={
 }
 
 ## Create Index
-es.indices.create(index="covid", ignore=400 body=settings)
+es.indices.create(index="covid", ignore=400, body=settings)
 
 ## Index Documents
 bulk(es, index='cord', doc_type='_doc', request_timeout=60, raise_on_error=True)
