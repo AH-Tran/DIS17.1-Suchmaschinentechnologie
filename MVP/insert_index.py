@@ -41,6 +41,7 @@ settings={
               "tokenizer": "standard",
               "stopwords": "_english",
               "filter": ["lowercase",
+                        "stop",
                         "asciifolding"
               ]  
             }
