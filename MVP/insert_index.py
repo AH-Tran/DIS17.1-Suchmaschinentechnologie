@@ -9,19 +9,6 @@ import requests
 ## Connect to Elasticsearch
 es = Elasticsearch([{"host": "localhost", "port": 9200}])
 
-## Generate CSV Dataframe
-csv_df = pd.read_csv("./MVP/metadata.csv", dtype=str, encoding="utf-8")
-
-## Get all Data Fields
-column_list = csv_df.columns.to_list()
-
-## Get rid of all missing Values, change to "none"
-for col in column_list:
-    csv_df.loc[csv_df[col].isnull(), col] = "None"
-
-## Transform Dataframe to Dictionary
-documents = csv_df.to_dict(orient="records")
-
 ## Check if Index already exists
 if es.indices.exists("covid_index"):
     es.indices.delete(index="covid_index")
@@ -59,7 +46,11 @@ settings={
                 "analyzer": "covid_analyzer"
             },
             "publish_time": {
-                "type": "text"
+                "type": "date"
+            },
+            "query" :  {
+            "type": "text",
+            "analyzer":"covid_analyzer"
             }
         }
     }
@@ -71,6 +62,6 @@ es.indices.analyze(index='covid_index', ignore=400, body=settings)
 
 ## Index Documents
 #bulk(es, index="covid_index", doc_type="_doc", request_timeout=60, raise_on_error=False)
-with open("./MVP/metadata.csv", "r", encoding="utf8") as f:
+with open("C:/Users/Andreas/Documents/Studium/DIS17.1 Suchmaschinentechnologien/Projekt/metadata.csv", "r", encoding="utf8") as f:
     reader = csv.DictReader(f)
     helpers.bulk(es, reader, index='covid_index',raise_on_error=False, stats_only=False)
