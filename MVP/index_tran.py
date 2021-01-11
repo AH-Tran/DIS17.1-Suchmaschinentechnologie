@@ -27,10 +27,10 @@ doc_settings={
               #KEYWORD
               "keyword_list": {
                 "type": "keyword_marker",# plural or singular?
-                "keywords": ["Covid-19", "SARS-COV-2", "SARS-COV", "2019-nCOV"
+                "keywords": ["Covid-19", "SARS-COV-2", "SARS-COV", "2019-nCOV",
                          "United States", "United Kingdom", "Hong Kong", "United Arab Emirates",
                          "non-social", "African-American",
-                          "mRNA ", "ACE inhibitor", "enzyme inhibitors", "blood type", "Angiotensin-converting", "clinical signs", "super spreaders", "hand sanitizer", "alcohol sanitizer", ""]#
+                          "mRNA ", "ACE inhibitor", "enzyme inhibitors", "blood type", "Angiotensin-converting", "clinical signs", "super spreaders", "hand sanitizer", "alcohol sanitizer"]#
                  },
                 #nGRAM
                 "tokenizer": {
