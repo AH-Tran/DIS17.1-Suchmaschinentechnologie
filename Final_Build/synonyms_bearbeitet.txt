@@ -24,7 +24,6 @@ final_result,upshot,resultant,outcome,outcomes,result
 Black_American,African_American,African-American,African-Americans,Afro-American
 phyletic,phylogenetic
 fatality,human_death
-2019-nCOV
 dying,Death,decease,deaths,death
 objective,object,target
 offer,cater,ply,supply,provide
@@ -39,7 +38,6 @@ hospital,infirmary
 harms,scathe,hurt,injury,harm
 decrease,diminish,decreasing
 BSF2,IL-6,Hepatocyte-stimulating factor,Hepatocyte growth factor,β2 interferons,creature,B-cell differentiation factor BSF2,hepatocyte-stimulating factor,hepatocyte stimulatory factors,carnal,sensual,MGI-2A,interleukin 6,B cell differentiation factor-2,B-cell-stimulatory factor 2,Animal growth regulators,Cytokine IL-6,animate_being,Hybridoma growth factor,Lymphokines,B-cell stimulatory factor 2,brute,B-cell differentiation factor 2,Hepatocyte-stimulating factor lymphokines and Cytokines,animal,fleshly,Plasmacytoma growth factor,Cytokines,beast,B-cell-stimulating factor 2,fauna
-Covid-19
 Coronavirus NSP1,virus,Nonstructural protein NS1,NSP1,Viral nonstructural protein NS1 (coronavirus),NS1,computer_virus,Viral nonstructural proteins,Coronavirus non-structural protein NSP1,Coronaviral nonstructural protein 1,Coronavirus non-structural protein 1,Coronavirus nonstructural protein 1,Nonstructural protein 1,Nonstructural proteins,Coronavirus nonstructural proteins,coronavirus NSP1,Nonstructural protein NSP1,Viral nonstructural protein NSP1 (coronavirus),Proteins,Coronaviral nonstructural protein NSP1,NS1 proteins,Viral nonstructural protein NS1,Viral nonstructural protein NSP1,NSP1 proteins
 particular,especial
 rapid
@@ -67,14 +65,12 @@ transmitting,transmittal,transmittance,transmission,contagion,infection
 exam,examine,trial,tests,examination,trial_run,test
 Ribonucleic acid replicase,RNA synthetase,Ribonucleic synthetase,RNA-dependent RNA replicase,RNA-directed,NSP12,Hepatitis C virus polymerase,Transcriptase,E.C. 2.7.7.48,flu,Nucleotidyltransferase,RNA-dependent,3D Polymerase,λ3,influenza,Replicase,Influenza virus polymerase,Influenza virus RNA polymerase,RNA-dependent RNA polymerase 3Dpol,grippe,Q-Beta replicase,RNA transcriptase,HCV polymerase,Ribonucleic acid-dependent ribonucleic acid polymerase,RNA-directed RNA polymerase,RdRp,of reovirus,RNA-dependent RNA polymerase,RNA-dependent ribonucleate nucleotidyltransferase,Proteins,Ribonucleic acid-dependent ribonucleate nucleotidyltransferase,Ribonucleic replicase,Qβ-replicase,Qβ-,phage f2,RNA polymerase,EC 2.7.7.48,ribonucleate,RNA replicase
 mortality_rate,deathrate,mortality,death_rate,fatality_rate
-Coronavirus NSP1,Nonstructural protein NS1,NSP1,Viral nonstructural protein NS1 (coronavirus),NS1,Viral nonstructural proteins,Coronavirus non-structural protein NSP1,Coronaviral nonstructural protein 1,Coronavirus non-structural protein 1,Coronavirus nonstructural protein 1,Nonstructural protein 1,Nonstructural proteins,Coronavirus nonstructural proteins,coronavirus NSP1,Nonstructural protein NSP1,Viral nonstructural protein NSP1 (coronavirus),Coronavirus,Proteins,Coronaviral nonstructural protein NSP1,NS1 proteins,Viral nonstructural protein NS1,Viral nonstructural protein NSP1,NSP1 proteins
+Coronavirus NSP1,Nonstructural protein NS1,NSP1,Viral nonstructural protein NS1 (coronavirus),NS1,Viral nonstructural proteins,Coronavirus non-structural protein NSP1,Coronaviral nonstructural protein 1,Coronavirus non-structural protein 1,Coronavirus nonstructural protein 1,Nonstructural protein 1,Nonstructural proteins,Coronavirus nonstructural proteins,coronavirus NSP1,Nonstructural protein NSP1,Viral nonstructural protein NSP1 (coronavirus),Coronavirus,Proteins,Coronaviral nonstructural protein NSP1,NS1 proteins,Viral nonstructural protein NS1,Viral nonstructural protein NSP1,NSP1 proteins, 2019-nCOV, Covid-19, COVID, COVID-19, SARS-CoV2
 Seeking,look_for,search,seek,seeking
-COVID
 ACEII,ACE-2,Angiotensin-converting enzyme-related carboxypeptidase,ACE2,APN 01,Angiotensin I converting enzyme 2,E.C. 3.4.17.23,Angiotensin I converting enzyme II,Angiotensin 1 converting enzyme II,ACE-II,Angiotensin-converting enzyme 2,Carboxypeptidase ACE2,Angiotensin-converting enzyme II,Carboxypeptidase,angiotensin-converting enzyme-related,EC 3.4.17.23,Angiotensin 1 converting enzyme 2
 line_of_descent,beginning,origination,descent,origin,source,inception
 handle,tending,aid,care
 Depression,depression,depressive_disorder,clinical_depression
-COVID-19
 Coronavirus 2′-O-methyltransferase NSP10/NSP16,Viral proteins,mRNA cap-specific 2′-O-methyltransferase NSP16 (SAM),Non-structural protein NSP16,Coronavirus 2′-O-methyltransferase NSP16,Coronavirus nonstructural protein NSP16,S-adenosylmethionine-dependent 2′-O-methyltransferase NSP16,SARS-coronavirus 2′-O-methyltransferase NSP10/NSP16,mRNA,informational_RNA,messenger_RNA,template_RNA,Nonstructural protein 16,2′-O-MTase NSP16,nsp16,Severe acute respiratory syndrome coronavirus nsp16 protein,2′-O-methyltransferase NSP10/NSP16 complex,SARS-CoV RNA cap SAM-dependent (nucleoside-2′-O-)-methyltransferase NSP16,NSP16/NSP10,Nonstructural proteins,SARS-CoV nsp16,NSP10/NSP16 complex,Coronavirus non-structural protein 16,NSP16,Non-structural protein 16,Coronavirus NSP10/NSP16 methyltransferase,SARS-coronavirus,Coronavirus nonstructural protein 16,SARS-CoV non-structural protein 16,Proteins,mRNA cap-specific 2′-O-methyltransferase NSP16,NSP10/NSP16,Viral nonstructural protein NS16 (coronavirus),Nonstructural protein NSP16,Coronavirus NSP16,SARS-coronavirus 2′-O-methyltransferase NSP16
 availability,accessibility,availableness
 research,explore
@@ -88,7 +84,6 @@ ACEII,ACE-2,Angiotensin-converting enzyme-related carboxypeptidase,ACE2,APN 01,A
 grownup,adults,adult
 multifariousness,variety,diversity,diverseness
 convalescence,recovery,recuperation
-SARS-CoV2
 corticosteroids,adrenal_cortical_steroid,corticosteroid,corticoid
 pandemic
 person,individual
