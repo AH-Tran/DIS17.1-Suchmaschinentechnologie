@@ -196,7 +196,7 @@ es.indices.analyze(index=index_name, ignore=400, body=doc_settings)
 
 ## Index Documents
 print("Inserting Metadata into Index...")
-with open("./Final_Build/metadata.csv", "r", encoding="utf8") as f:
+with open("./Final_Build/metadata_update.csv", "r", encoding="utf8") as f:
     reader = csv.DictReader(f)
     helpers.bulk(es, reader, index=index_name,raise_on_error=False, stats_only=False)
 print("Insert Complete! Pipeline end!")

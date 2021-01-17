@@ -4,7 +4,7 @@ import pprint
 import datetime
 pd.options.mode.chained_assignment = None
 
-df = pd.read_csv("./MVP/metadata.csv")
+df = pd.read_csv("./Final_Build/metadata.csv")
 #liste = df["publish_time"]
 #print(liste[0])
 
@@ -47,4 +47,4 @@ print(liste_date_3)
 #print(len(liste_date_1) +len(liste_date_2)+len(liste_date_3))
 #print(len(liste)-(len(liste_date_1) +len(liste_date_2)+len(liste_date_3)))
 
-df.to_csv("./MVP/metadata_update.csv")
+df.to_csv("./Final_Build/metadata_update.csv")
