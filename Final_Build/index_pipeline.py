@@ -8,7 +8,7 @@ import requests
 
 ## Connect to Elasticsearch
 es = Elasticsearch([{"host": "localhost", "port": 9200}])
-index_name= "covid_index"
+index_name= "covid_index2"
 ## Check if Index already exists
 if es.indices.exists(index_name):
     es.indices.delete(index=index_name)
@@ -22,6 +22,7 @@ for i in content:
 #print(content)
 
 #content =["coronavirus, sars-cov-2, sars-cov2, sars cov 2,covid19, covid-19, covid 19, covid" ] 
+print("Configuring Index Settings...")
 ## index settings: mapping for publish_time
 doc_settings = {
     "settings": {
@@ -53,11 +54,12 @@ doc_settings = {
                     "language" : "english"
                 },
               "keyword_list": {
-                "type": "keyword_marker",# plural or singular?
-                "keywords": ["Covid-19", "SARS-COV-2", "SARS-COV", "2019-nCOV"
-                         "United States", "United Kingdom", "Hong Kong", "United Arab Emirates",
-                         "non-social", "African-American",
-                          "mRNA ", "ACE inhibitor", "enzyme inhibitors", "blood type", "Angiotensin-converting", "clinical signs", "super spreaders", "hand sanitizer", "alcohol sanitizer", ""]#
+                "type": "keyword_marker",
+                "ignore_case": True,
+                "keywords": ["covid-19", "sars-cov-2", "sars-cov", "2019-ncov",
+                         "united states", "united kingdom", "hong kong", "united arab emirates",
+                         "non-social", "african-american",
+                          "mrna ", "ace inhibitor", "enzyme inhibitors", "blood type", "angiotensin-converting", "clinical signs", "super spreaders", "hand sanitizer", "alcohol sanitizer"]#
                  },
                 "ngram_filter": {
                     "type":     "ngram",
@@ -89,12 +91,12 @@ doc_settings = {
                     "tokenizer": "standard",
                     "stopwords": "_english",
                     "filter": ["synonym",
-                                "acronym",
                                "lowercase",
+                                "keyword_list",
                                "stop",
                                "asciifolding",
-                               "my_snow",
-                               "keyword_list"],
+                               "my_snow"
+                               ],
                     "char_filter": ["covid_char_filter"]
                 },
                 "ngram_analyzer": {
@@ -110,10 +112,11 @@ doc_settings = {
                     "tokenizer": "standard",
                     "stopwords": "_english",
                     "filter": ["lowercase",
+                               "keyword_list",
                                "stop",
                                "asciifolding",
-                               "my_snow",
-                               "keyword_list"],
+                               "my_snow"
+                               ],
                     "char_filter": ["covid_char_filter"]
                     }
                 }# ANALYZER END
@@ -183,12 +186,16 @@ doc_settings = {
         } # PROPERTIES END
     } # MAPPINGS END
 }# DOC_SETTINGS END
+print("Index Config Complete!...")
 
 ## Create Index
+print("Creating Index...")
 es.indices.create(index=index_name, ignore=400, body=doc_settings)
 es.indices.analyze(index=index_name, ignore=400, body=doc_settings)
 
 ## Index Documents
+print("Inserting Metadata into Index...")
 with open("./Final_Build/metadata.csv", "r", encoding="utf8") as f:
     reader = csv.DictReader(f)
     helpers.bulk(es, reader, index=index_name,raise_on_error=False, stats_only=False)
+print("Insert Complete! Pipeline end!")
