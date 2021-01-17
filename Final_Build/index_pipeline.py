@@ -8,7 +8,7 @@ import requests
 
 ## Connect to Elasticsearch
 es = Elasticsearch([{"host": "localhost", "port": 9200}])
-index_name= "covid_index2"
+index_name= "covid_index"
 ## Check if Index already exists
 if es.indices.exists(index_name):
     es.indices.delete(index=index_name)
@@ -91,6 +91,7 @@ doc_settings = {
                     "tokenizer": "standard",
                     "stopwords": "_english",
                     "filter": ["synonym",
+                                "acronym",
                                "lowercase",
                                 "keyword_list",
                                "stop",
@@ -130,17 +131,17 @@ doc_settings = {
                   },
                   "DFR_similarity": {
                     "type": "DFR",
-                    "basic_model": "g",
-                    "after_effect": "l",
-                    "normalization": "h2"
+                    "basic_model": "g",#possible values: g, if, in, ine
+                    "after_effect": "l",#possible values: b, l
+                    "normalization": "h2" #possible values: no, h1, h2, h3, z
                   },
                   "LMJelinekMercer_short": {
                     "type": "LMJelinekMercer",
-                    "lambda": "0.1"
+                    "lambda": "0.1" #The closer to 0, the better score for documents with many query matches
                   },
                  "LMJelinekMercer_long": {
                     "type": "LMJelinekMercer",
-                    "lambda": "0.7"
+                    "lambda": "0.7" #The closer to 0, the better score for documents with many query matches
                   },
                 "TFIDF": {
                     "type": "scripted",
