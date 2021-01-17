@@ -131,8 +131,8 @@ doc_settings = {
                   "DFR_similarity": {
                     "type": "DFR",
                     "basic_model": "g",#possible values: g, if, in, ine
-                    "after_effect": "l",#possible values: b, l
-                    "normalization": "h2" #possible values: no, h1, h2, h3, z
+                    "after_effect": "b",#possible values: b, l
+                    "normalization": "z" #possible values: no, h1, h2, h3, z
                   },
                   "LMJelinekMercer_short": {
                     "type": "LMJelinekMercer",
