@@ -67,7 +67,6 @@ doc_settings = {
                     "max_gram": 3,
                     "token_chars": [
                         "letter",
-                        "digit",
                         "punctuation",
                         "symbol"
                     ]

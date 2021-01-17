@@ -2,10 +2,10 @@ from elasticsearch import Elasticsearch
 import xml.etree.ElementTree as ET
 import json
 
-path = 'topics-rnd5_covid-complete.xml'
-collection_name = "covid_index_test"
+path = './Final_Build/topics-rnd5_covid-complete.xml'
+collection_name = "covid_index"
 
-
+print("Defining Query...")
 def import_querys(path):
     tree = ET.parse(path)
     root = tree.getroot()
@@ -31,12 +31,12 @@ def import_querys(path):
                                 "multi_match": {
                                     "query": query_list[i],
                                     "analyzer": "query_analyzer",
-                                    "fields": ["title.analysis^1.2", "title^0.8", "title.keyword^10"]},
+                                    "fields": ["title.analysis^2", "title^0.8", "title.keyword^10"]},
                                 "multi_match": {
                                     "query": query_list[i],
                                     "analyzer": "query_analyzer",
-                                    "fields": "title.ngram^1.5",
-                                    "minimum_should_match": "1%"
+                                    "fields": "title.ngram^0.5",
+                                    "minimum_should_match": "80%"
                                 },
                                 "multi_match": {
                                     "query": query_list[i],
@@ -75,7 +75,7 @@ liste = import_querys(path)
 
 
 # print(liste[0])
-
+print("Post Query...")
 def search(collection_index, formatted_query_list):
     liste_strings = []
     # myfile = open("results.txt", 'w')
@@ -94,11 +94,12 @@ def search(collection_index, formatted_query_list):
                 liste_strings.append(string)
             else:
                 continue
-    myfile = open("results_update_today_2.txt", 'w', encoding="utf-8", newline='\n')
+    myfile = open("./Final_Build/result_files/results_001_snowstem.txt", 'w', encoding="utf-8", newline='\n')
 
     for i in range(len(liste_strings)):
         myfile.write(liste_strings[i] + "\n")
     myfile.close()
-
+print("Writing Results in results.txt...")
 
 search(collection_name, liste)
+print("Result finished! END")
