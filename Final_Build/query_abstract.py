@@ -2,8 +2,8 @@ from elasticsearch import Elasticsearch
 import xml.etree.ElementTree as ET
 import json
 
-path = 'topics-rnd5_covid-complete.xml'
-collection_name = "covid_index_test"
+path = './Final_Build/topics-rnd5_covid-complete.xml'
+collection_name = "covid_index"
 
 
 def import_querys(path):
@@ -60,7 +60,7 @@ def search(collection_index, formatted_query_list):
                 liste_strings.append(string)
             else:
                 continue
-    myfile = open("results_update_today_4.txt", 'w', encoding="utf-8", newline='\n')
+    myfile = open("./Final_Build/result_files/results_003.txt", 'w', encoding="utf-8", newline='\n')
 
     for i in range(len(liste_strings)):
         myfile.write(liste_strings[i] + "\n")
@@ -68,3 +68,4 @@ def search(collection_index, formatted_query_list):
 
 
 search(collection_name, liste)
+print("Result finished! END")
