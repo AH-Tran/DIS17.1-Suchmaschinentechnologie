@@ -1,0 +1,124 @@
+E.C. 3.4.14.5,Post-proline dipeptidyl aminopeptidase,Post-proline dipeptidyl aminopeptidase IV,Gly-Pro naphthylamidase,T-cell,Adenosine deaminase-binding protein,Xaa-Pro-dipeptidylaminopeptidase,1F7 antigens,Amino acyl-prolyl dipeptidyl aminopeptidase,DPP IV,DPP4,Adenosine deaminase-binding proteins,Antigen 1f7,post-proline dipeptidyl,Dipeptidyl-peptidase IV-β,Antigens,X-Prolyl dipeptidyl peptidases,EC 3.4.14.5,EC 3.4.14.11,X-Prolyl dipeptidyl aminopeptidases,Dipeptidyl aminopeptidase type iv,Dipeptidyl-aminopeptidase IV,Glycylproline aminopeptidase,Glycylproline-dipeptidyl-aminopeptidases,X-Prolyl-dipeptidyl aminopeptidase,Dipeptidyl peptidase IV,Glycylprolyl dipeptidylaminopeptidase,X-Prolyl dipeptidyl peptidase,dipeptidyl,IV,X-Pro dipeptidyl peptidase,Dipeptidyl peptidase DP4,Glycylprolyl aminopeptidase,Prolyl dipeptidyl peptidase IV,DPPIV,Type IV dipeptidyl aminopeptidases,Aminopeptidase,CD26,X-Prolyl dipeptidyl aminopeptidase,glycylproline,Glycylproline aminopeptidases,DPP 4,Xaa-Pro dipeptidyl-peptidase,Casomorphinase,TP103,Proteins,DDP-4,ADCP2,Dipeptidase-IV,Peptidase,Dipeptidyl peptidase-4,1F7 antigen,Glycylproline-dipeptidyl-aminopeptidase,E.C. 3.4.14.11,Type IV dipeptidyl aminopeptidase,T-cell activation antigen CD26
+coughing,cough
+weather,weather_condition,atmospheric_condition
+succession,sequence,successiveness
+base,based
+benefit,gain,profit,benefitted
+reach,scope,range,ambit
+immune,resistant
+theme,subject,topic,matter
+Dexamethasone_Intensol,Oradexon,Decadron,dexamethasone,Hexadrol,Dexone
+melanise,dark,blackness,Negro,black,melanize,Black_person,Black,Negroid
+anxiety,anxiousness
+pass_with_flying_colors,I,ace,Angiotensin-converting enzyme-related carboxypeptidase,one,E.C. 3.4.17.23,Allied_Command_Europe,wiz,angiotensin-converting enzyme-related,sweep_through,unity,superstar,ACE2,Angiotensin-converting enzyme II,mavin,angiotensin-converting_enzyme,A-one,Angiotensin-converting enzyme 2,Angiotensin I converting enzyme II,sensation,virtuoso,ACE,single,top-notch,adept,nail,APN 01,Angiotensin 1 converting enzyme II,ACE-II,Carboxypeptidase ACE2,super,Angiotensin I converting enzyme 2,champion,sail_through,tiptop,1,hotshot,crack,genius,Angiotensin 1 converting enzyme 2,ACE-2,whizz,ACEII,star,first-rate,tops,breeze_through,Carboxypeptidase,topnotch,wizard,maven,EC 3.4.17.23,angiotensin_converting_enzyme,whiz
+adverse,contrary,untoward,inauspicious
+proportion,ratio,dimension,proportionality
+treat,treating
+emergence,emersion,egress,egression
+inhibit,curb,suppress
+condition,circumstance,conditions,precondition,status
+homo,human_being,human
+confront,faced
+difference,divergence
+final_result,upshot,resultant,outcome,outcomes,result
+Black_American,African_American,African-American,African-Americans,Afro-American
+phyletic,phylogenetic
+fatality,human_death
+2019-nCOV
+dying,Death,decease,deaths,death
+objective,object,target
+offer,cater,ply,supply,provide
+scientific_discipline,science
+data,information
+Viral proteins,s2 spike,S2 (spike-anchoring) glycoprotein,empale,stiletto_heel,fortify,subunit S2,SARS S2 glycoprotein,S2 (spike-anchoring) protein,S2 protein,S,spindle,S2 glycoprotein,Viral spike glycoproteins,lace,spike S2,spike,S2 spike-anchoring glycoprotein,transfix,Glycoproteins,S2 protein (spike),S2,Proteins,SARS S2 proteins,spike_heel,S2 spike-anchoring protein,Viral glycoprotein S2 spike,S2 spike,spike_out,capitulum,Protein S,ear,S2 spike glycoprotein,impale,S2 spike proteins
+activity,natural_action,activeness,body_process,bodily_process,activities,bodily_function,natural_process
+prevalence,preponderance
+family,fellowship,kin,kinsperson,kinfolk,families,kinsfolk
+assess,valuate,assessing,evaluate,appraise
+hospital,infirmary
+harms,scathe,hurt,injury,harm
+decrease,diminish,decreasing
+BSF2,IL-6,Hepatocyte-stimulating factor,Hepatocyte growth factor,β2 interferons,creature,B-cell differentiation factor BSF2,hepatocyte-stimulating factor,hepatocyte stimulatory factors,carnal,sensual,MGI-2A,interleukin 6,B cell differentiation factor-2,B-cell-stimulatory factor 2,Animal growth regulators,Cytokine IL-6,animate_being,Hybridoma growth factor,Lymphokines,B-cell stimulatory factor 2,brute,B-cell differentiation factor 2,Hepatocyte-stimulating factor lymphokines and Cytokines,animal,fleshly,Plasmacytoma growth factor,Cytokines,beast,B-cell-stimulating factor 2,fauna
+Covid-19
+Coronavirus NSP1,virus,Nonstructural protein NS1,NSP1,Viral nonstructural protein NS1 (coronavirus),NS1,computer_virus,Viral nonstructural proteins,Coronavirus non-structural protein NSP1,Coronaviral nonstructural protein 1,Coronavirus non-structural protein 1,Coronavirus nonstructural protein 1,Nonstructural protein 1,Nonstructural proteins,Coronavirus nonstructural proteins,coronavirus NSP1,Nonstructural protein NSP1,Viral nonstructural protein NSP1 (coronavirus),Proteins,Coronaviral nonstructural protein NSP1,NS1 proteins,Viral nonstructural protein NS1,Viral nonstructural protein NSP1,NSP1 proteins
+particular,especial
+rapid
+criminal_offense,crimes,crime,law-breaking,criminal_offence,offence,offense
+Proteins,Nonstructural protein 6,Severe acute respiratory syndrome coronavirus NSP6,NS6 proteins,Coronavirus non-structural protein NSP6,Severe acute respiratory syndrome coronavirus-2 NSP6,NSP6 proteins,NS6,Coronavirus nonstructural protein 6,Coronavirus NSP6,Coronavirus non-structural protein 6,Viral nonstructural protein NS6 (coronavirus),SARS-CoV NSP6,Viral nonstructural protein NSP6,Viral nonstructural protein NS6,Nonstructural protein NSP6,syndrome,SARS-CoV-2 NSP6
+oftentimes,frequently,ofttimes,oft,often raus
+cause,causes,induce raus
+trial,trials,trial_run,test
+E.C. 3.4.14.5,Post-proline dipeptidyl aminopeptidase,Post-proline dipeptidyl aminopeptidase IV,Gly-Pro naphthylamidase,Adenosine deaminase-binding protein,Xaa-Pro-dipeptidylaminopeptidase,1F7 antigens,Amino acyl-prolyl dipeptidyl aminopeptidase,DPP IV,DPP4,Adenosine deaminase-binding proteins,Antigen 1f7,post-proline dipeptidyl,Dipeptidyl-peptidase IV-β,Antigens,X-Prolyl dipeptidyl peptidases,,EC 3.4.14.5,EC 3.4.14.11,cell,cadre,X-Prolyl dipeptidyl aminopeptidases,Dipeptidyl aminopeptidase type iv,Dipeptidyl-aminopeptidase IV,Glycylproline aminopeptidase,Glycylproline-dipeptidyl-aminopeptidases,Dipeptidyl peptidase IV,Glycylprolyl dipeptidylaminopeptidase,X-Prolyl-dipeptidyl aminopeptidase,X-Prolyl dipeptidyl peptidase,dipeptidyl,Glycylproline-dipeptidyl-aminopeptidase,X-Pro dipeptidyl peptidase,Dipeptidyl peptidase DP4,Glycylprolyl aminopeptidase,Prolyl dipeptidyl peptidase IV,DPPIV,Type IV dipeptidyl aminopeptidases,Aminopeptidase,CD26,X-Prolyl dipeptidyl aminopeptidase,Xaa-Pro dipeptidyl-peptidase,Glycylproline aminopeptidases,DPP 4,cubicle,Casomorphinase,TP103,Proteins,DDP-4,Dipeptidase-IV,ADCP2,Peptidase,Dipeptidyl peptidase-4,electric_cell,1F7 antigen,glycylproline,E.C. 3.4.14.11,Type IV dipeptidyl aminopeptidase,T-cell activation antigen CD26
+Proteins,IPO8,Importin-8,RanBP8,8,IPO8 (importin 8),karyopherin,Karyopherins,IMP8,protein,Karopherins,importin 8,Importin 8,Importins,proteins
+medications,medicine,medicament,medicinal_drug,medication
+confirm,reassert,corroborate,affirm
+prognosticate,predict,anticipate,forecast,foretell
+vaccine,vaccines,vaccinum
+genetic_mutation,chromosomal_mutation,mutation,mutant
+possibility,possible_action,possibleness
+impact,impingement,affect
+instructor,teacher
+Immunoglobulin receptor,Receptors,FcR,Fc receptor,Receptor Fc,Fc receptors,FcR receptors,Immunoglobulins,Ig fragment Fc receptors,sense_organ,Immunoglobulin Fc receptors,sensory_receptor,receptors,Ig Fc receptors,Igs,receptor,Ig fragment Fc,Ig receptors,Ig Fc region receptors
+foreclose,prevent,preclude,forestall
+speedily,quickly,apace,rapidly
+supplementation,supplement,supplements
+take_out,excluding,leave_out,omit,debar,except,keep_out,exclude
+transmitting,transmittal,transmittance,transmission,contagion,infection
+exam,examine,trial,tests,examination,trial_run,test
+Ribonucleic acid replicase,RNA synthetase,Ribonucleic synthetase,RNA-dependent RNA replicase,RNA-directed,NSP12,Hepatitis C virus polymerase,Transcriptase,E.C. 2.7.7.48,flu,Nucleotidyltransferase,RNA-dependent,3D Polymerase,λ3,influenza,Replicase,Influenza virus polymerase,Influenza virus RNA polymerase,RNA-dependent RNA polymerase 3Dpol,grippe,Q-Beta replicase,RNA transcriptase,HCV polymerase,Ribonucleic acid-dependent ribonucleic acid polymerase,RNA-directed RNA polymerase,RdRp,of reovirus,RNA-dependent RNA polymerase,RNA-dependent ribonucleate nucleotidyltransferase,Proteins,Ribonucleic acid-dependent ribonucleate nucleotidyltransferase,Ribonucleic replicase,Qβ-replicase,Qβ-,phage f2,RNA polymerase,EC 2.7.7.48,ribonucleate,RNA replicase
+mortality_rate,deathrate,mortality,death_rate,fatality_rate
+Coronavirus NSP1,Nonstructural protein NS1,NSP1,Viral nonstructural protein NS1 (coronavirus),NS1,Viral nonstructural proteins,Coronavirus non-structural protein NSP1,Coronaviral nonstructural protein 1,Coronavirus non-structural protein 1,Coronavirus nonstructural protein 1,Nonstructural protein 1,Nonstructural proteins,Coronavirus nonstructural proteins,coronavirus NSP1,Nonstructural protein NSP1,Viral nonstructural protein NSP1 (coronavirus),Coronavirus,Proteins,Coronaviral nonstructural protein NSP1,NS1 proteins,Viral nonstructural protein NS1,Viral nonstructural protein NSP1,NSP1 proteins
+Seeking,look_for,search,seek,seeking
+COVID
+ACEII,ACE-2,Angiotensin-converting enzyme-related carboxypeptidase,ACE2,APN 01,Angiotensin I converting enzyme 2,E.C. 3.4.17.23,Angiotensin I converting enzyme II,Angiotensin 1 converting enzyme II,ACE-II,Angiotensin-converting enzyme 2,Carboxypeptidase ACE2,Angiotensin-converting enzyme II,Carboxypeptidase,angiotensin-converting enzyme-related,EC 3.4.17.23,Angiotensin 1 converting enzyme 2
+line_of_descent,beginning,origination,descent,origin,source,inception
+handle,tending,aid,care
+Depression,depression,depressive_disorder,clinical_depression
+COVID-19
+Coronavirus 2′-O-methyltransferase NSP10/NSP16,Viral proteins,mRNA cap-specific 2′-O-methyltransferase NSP16 (SAM),Non-structural protein NSP16,Coronavirus 2′-O-methyltransferase NSP16,Coronavirus nonstructural protein NSP16,S-adenosylmethionine-dependent 2′-O-methyltransferase NSP16,SARS-coronavirus 2′-O-methyltransferase NSP10/NSP16,mRNA,informational_RNA,messenger_RNA,template_RNA,Nonstructural protein 16,2′-O-MTase NSP16,nsp16,Severe acute respiratory syndrome coronavirus nsp16 protein,2′-O-methyltransferase NSP10/NSP16 complex,SARS-CoV RNA cap SAM-dependent (nucleoside-2′-O-)-methyltransferase NSP16,NSP16/NSP10,Nonstructural proteins,SARS-CoV nsp16,NSP10/NSP16 complex,Coronavirus non-structural protein 16,NSP16,Non-structural protein 16,Coronavirus NSP10/NSP16 methyltransferase,SARS-coronavirus,Coronavirus nonstructural protein 16,SARS-CoV non-structural protein 16,Proteins,mRNA cap-specific 2′-O-methyltransferase NSP16,NSP10/NSP16,Viral nonstructural protein NS16 (coronavirus),Nonstructural protein NSP16,Coronavirus NSP16,SARS-coronavirus 2′-O-methyltransferase NSP16
+availability,accessibility,availableness
+research,explore
+cytokine,receptors,IL-8 receptor,Interleukin 8 receptor,interleukin 8,CDw128 (antigen),Lymphokines and Cytokines,CDw128,NAP-1 receptors
+human_beings,human_race,humankind,mankind,humans,human_being,human
+hypertension,high_blood_pressure
+unwellness,malady,sickness,illness
+remdesivir
+granting_immunity,immunity,resistance
+ACEII,ACE-2,Angiotensin-converting enzyme-related carboxypeptidase,ACE2,APN 01,Angiotensin I converting enzyme 2,E.C. 3.4.17.23,Angiotensin I converting enzyme II,Angiotensin 1 converting enzyme II,ACE-II,Angiotensin-converting enzyme 2,Carboxypeptidase ACE2,Angiotensin-converting,Angiotensin-converting enzyme II,Carboxypeptidase,angiotensin-converting enzyme-related,EC 3.4.17.23,Angiotensin 1 converting enzyme 2
+grownup,adults,adult
+multifariousness,variety,diversity,diverseness
+convalescence,recovery,recuperation
+SARS-CoV2
+corticosteroids,adrenal_cortical_steroid,corticosteroid,corticoid
+pandemic
+person,individual
+recurrent,repeated
+infect,infected,septic
+evolution,phylogenesis,phylogeny,development
+chemicals,chemical_substance,chemical
+quelling,suppression
+link,associate,connect,tie_in,link_up,relate,associated,consociate
+ACEII,ACE-2,Angiotensin-converting enzyme-related carboxypeptidase,ACE2,APN 01,Angiotensin I converting enzyme 2,E.C. 3.4.17.23,Angiotensin I converting enzyme II,Angiotensin 1 converting enzyme II,ACE-II,Angiotensin-converting enzyme 2,Carboxypeptidase ACE2,Angiotensin-converting enzyme II,Carboxypeptidase,angiotensin-converting enzyme-related,EC 3.4.17.23,enzyme,Angiotensin 1 converting enzyme 2
+gender,sex
+answer,reply,respond
+concentrations,denseness,density,compactness,concentration
+liquid_state,liquidity,liquid,liquidness,liquids
+Proteins,Nonstructural protein 6,Severe acute respiratory syndrome coronavirus NSP6,NS6 proteins,Coronavirus non-structural protein NSP6,Severe acute respiratory syndrome coronavirus-2 NSP6,NSP6 proteins,NS6,Coronavirus nonstructural protein 6,Coronavirus NSP6,Viral nonstructural protein NS6 (coronavirus),SARS-CoV NSP6,Viral nonstructural protein NSP6,Viral nonstructural protein NS6,Nonstructural protein NSP6,Coronavirus non-structural protein 6,SARS-CoV-2,SARS-CoV-2 NSP6
+constitute,symbolize,represent
+needful,need,needed,required,necessitate,require
+Proteins,IPO8,Importin-8,RanBP8,8,IPO8 (importin 8),Karyopherins,IMP8,protein,Karopherins,importin 8,Importin 8,Importins,karyopherin
+antecedently,previously
+detect, notice, discover
+student, scholar, students, educatee, pupil
+sanitizer
+worry,concern
+pathogenesis
+biomarkers
+help,aid
+Plaquenil,hydroxychloroquine
+evidence,prove
+Coronavirus NSP1,Nonstructural protein NS1,NSP1,Viral nonstructural protein NS1 (coronavirus),NS1,Viral nonstructural proteins,Coronavirus non-structural protein NSP1,Coronaviral nonstructural protein 1,Coronavirus non-structural protein 1,Coronavirus nonstructural protein 1,Nonstructural protein 1,Nonstructural proteins,Coronavirus nonstructural proteins,coronavirus NSP1,coronavirus,Nonstructural protein NSP1,Viral nonstructural protein NSP1 (coronavirus),Proteins,Coronaviral nonstructural protein NSP1,NS1 proteins,Viral nonstructural protein NS1,Viral nonstructural protein NSP1,NSP1 proteins
+laboratory,research_lab,research_laboratory,science_laboratory,science_lab,lab
+antibody
+Proteins,Nonstructural protein 6,Severe acute respiratory syndrome coronavirus NSP6,NS6 proteins,Coronavirus non-structural protein NSP6,Severe acute respiratory syndrome coronavirus-2 NSP6,NSP6 proteins,NS6,Coronavirus nonstructural protein 6,Coronavirus NSP6,Viral nonstructural protein NS6 (coronavirus),SARS-CoV NSP6,Viral nonstructural protein NSP6,Viral nonstructural protein NS6,Nonstructural protein NSP6,Coronavirus non-structural protein 6,SARS-CoV,SARS-CoV-2 NSP6
+Vitamin D
