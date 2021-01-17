@@ -3,7 +3,7 @@ import xml.etree.ElementTree as ET
 import json
 
 path = 'topics-rnd5_covid-complete.xml'
-collection_name = "covid_index"
+collection_name = "covid_index_test"
 
 
 def import_querys(path):
@@ -12,18 +12,16 @@ def import_querys(path):
     query_list = []
     narrative_list = []
     question_list = []
-    for topic in root:    
+    for topic in root:
         for querys in topic.findall("query"):
             query_list.append(querys.text)
-        #for narratives in topic.findall("narrative"):
-         #   narrative_list.append(narratives.text)
-        #for questions in topic.findall("question"):
-            #  question_list.append(questions.text)
+        # for narratives in topic.findall("narrative"):
+        #   narrative_list.append(narratives.text)
+        # for questions in topic.findall("question"):
+        #  question_list.append(questions.text)
 
     formatted_query_list = []
     for i in range(50):
-
-
         query = {
             "query": {
                 "bool": {
@@ -33,11 +31,17 @@ def import_querys(path):
                                 "multi_match": {
                                     "query": query_list[i],
                                     "analyzer": "query_analyzer",
-                                    "fields": "title"},
+                                    "fields": ["title.analysis^1.2", "title^0.8", "title.keyword^10"]},
                                 "multi_match": {
                                     "query": query_list[i],
                                     "analyzer": "query_analyzer",
-                                    "fields": "abstract"},
+                                    "fields": "title.ngram^1.5",
+                                    "minimum_should_match": "1%"
+                                },
+                                "multi_match": {
+                                    "query": query_list[i],
+                                    "analyzer": "query_analyzer",
+                                    "fields": "abstract"}
                             }}},
                     "should": [
                         {
@@ -61,7 +65,7 @@ def import_querys(path):
                 }
             }
         }
-        
+
         formatted_query_list.append(query)
 
     return formatted_query_list
@@ -90,7 +94,7 @@ def search(collection_index, formatted_query_list):
                 liste_strings.append(string)
             else:
                 continue
-    myfile = open("results_update2.txt", 'w', encoding="utf-8", newline='\n')
+    myfile = open("results_update_today_2.txt", 'w', encoding="utf-8", newline='\n')
 
     for i in range(len(liste_strings)):
         myfile.write(liste_strings[i] + "\n")
