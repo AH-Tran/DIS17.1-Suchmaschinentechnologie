@@ -159,12 +159,12 @@ doc_settings = {
                     "analysis": { 
                         "type":     "text",
                         "analyzer": "covid_analyzer",
-                        "similarity": "BM25_similarity"
+                        "similarity": "LMJelinekMercer_short"
                     },
                     "ngram": { 
                         "type":     "text",
                         "analyzer": "ngram_analyzer",
-                        "similarity": "BM25_similarity"
+                        "similarity": "LMJelinekMercer_short"
                     },
                     "keyword": { 
                         "type":     "keyword"
