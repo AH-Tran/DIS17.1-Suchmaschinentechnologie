@@ -49,3 +49,17 @@ In Final_Build/query.py
 - publish_time
     - Since 2019?
 
+### Reranking Procedure
+1. Similarity Module: All BM25, with standardized Boosts
+    - Which Stemmer is ideal? Snow or Standardstemmer
+2. BM25: Which Parameters are the best? (For All Fields)
+3. DFR: Which Parameters are the best? ( in Abstract)
+4. LMJ: Which Paramameters are the best? (in Abstract & Title)
+5. Similarity Module Testing for Title: Which is best? (BM25 vs. LMJ Short, vs TFIDF)
+6. Similarity Module Testing for Abstract: (BM25 vs. DFR vs. LMJ Short vs TFIDF)
+7. Put Together best results
+8. Boosting: Testing best Parameters for title
+10. Boosting: Testing best Parameters for abstract
+11. Boosting: Testing best Parameter for n_gram> minimum_should_match %
+12. Boosting: Testing best Parameters for publish_time
+13. Adjust Synonyms, is it better?
