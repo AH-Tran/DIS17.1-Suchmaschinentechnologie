@@ -68,7 +68,7 @@ https://app.asana.com/0/1198889708166349/list
 
 ### 6. Presentation
 
-TBD
+https://drive.google.com/file/d/159reGm6GmrpRyARyYomXdJFnLFZ5mx92/view?usp=sharing
 
 ### 7. Literature
 - [https://qa.fastforwardlabs.com/elasticsearch/qa%20system%20design/passage%20ranking/masked%20language%20model/word%20embeddings/2020/07/22/Improving_the_Retriever_on_Natural_Questions.html](https://qa.fastforwardlabs.com/elasticsearch/qa%20system%20design/passage%20ranking/masked%20language%20model/word%20embeddings/2020/07/22/Improving_the_Retriever_on_Natural_Questions.html)
