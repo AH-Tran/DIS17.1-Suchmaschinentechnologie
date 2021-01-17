@@ -1,10 +1,10 @@
 # Readme_Masterfile 
 ### 0- TO DO
 - [ ] [https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-custom-analyzer.html]
-	- [ ] Read: Custom_analyzer for Tokens, Filters, ETC
-	- [ ] Create Index_pipeline.py for indexing metadata.csv with Custom_analyzer 
-	- [ ] Apply Custom_analyzer to Querybuilder
-	- [ ] Read up on Ingestion Nodes (Tran)
+	- [X] Read: Custom_analyzer for Tokens, Filters, ETC
+	- [X] Create Index_pipeline.py for indexing metadata.csv with Custom_analyzer 
+	- [X] Apply Custom_analyzer to Querybuilder
+	- [X] Read up on Ingestion Nodes (Tran)
 
 ### 1. MVP
 - [x] Install Elastic + Kibana
@@ -19,22 +19,22 @@
 ### 2. Further Development
 - [ ] Apply **3. How to improve Rankings**
 - [ ] Automate with Python + Jupiter Notebook
-	- [ ] Query to Elastic
-	- [ ] Get Search Result from Elastic
-	- [ ] Transform Result into trec_eval format
-	- [ ] Union the results into one result file
+	- [X] Query to Elastic
+	- [X] Get Search Result from Elastic
+	- [X] Transform Result into trec_eval format
+	- [X] Union the results into one result file
 	- [ ] Evaluate result file with trec_eval
 
 ###  3. How to improve Rankings
-- [ ] Indexing
-- [ ] Stopword Lists
-	- [ ] Analyse Metadata.csv
-	- [ ] Most frequent words
-	- [ ] Most rare words with high frequency in single documents
-	- [ ] Stopword_list for different languages
-		- [ ] Identify Languages with [https://github.com/saffsd/langid.py](https://github.com/saffsd/langid.py)
-		- [ ] NLP Tool [https://spacy.io/](spacy)
-		- [ ] NLTK library [https://www.nltk.org/](https://www.nltk.org/)
+- [X] Indexing
+- [X] Stopword Lists
+	- [X] Analyse Metadata.csv
+	- [X] Most frequent words
+	- [X] Most rare words with high frequency in single documents
+	- [X] Stopword_list for different languages
+		- [_] Identify Languages with [https://github.com/saffsd/langid.py](https://github.com/saffsd/langid.py)
+		- [_] NLP Tool [https://spacy.io/](spacy)
+		- [_] NLTK library [https://www.nltk.org/](https://www.nltk.org/)
 	- [ ] Vereinigen mit nltk_stopwords.txt
 	- [ ] Inverse Application of diffferent stopword_lists for different languages
 - [ ] Thesauri (Synonym, Polysemi)
