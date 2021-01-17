@@ -95,7 +95,7 @@ doc_settings = {
                                 "keyword_list",
                                "stop",
                                "asciifolding",
-                               "my_snow"
+                               "english_stemmer"
                                ],
                     "char_filter": ["covid_char_filter"]
                 },
@@ -115,7 +115,7 @@ doc_settings = {
                                "keyword_list",
                                "stop",
                                "asciifolding",
-                               "my_snow"
+                               "english_stemmer"
                                ],
                     "char_filter": ["covid_char_filter"]
                     }
