@@ -51,15 +51,24 @@ In Final_Build/query.py
 
 ### Reranking Procedure
 1. Similarity Module: All BM25, with standardized Boosts
-    - Which Stemmer is ideal? Snow or Standardstemmer
-2. BM25: Which Parameters are the best? (For All Fields)
-3. DFR: Which Parameters are the best? ( in Abstract)
-4. LMJ: Which Paramameters are the best? (in Abstract & Title)
-5. Similarity Module Testing for Title: Which is best? (BM25 vs. LMJ Short, vs TFIDF)
-6. Similarity Module Testing for Abstract: (BM25 vs. DFR vs. LMJ Short vs TFIDF)
-7. Put Together best results
-8. Boosting: Testing best Parameters for title
-10. Boosting: Testing best Parameters for abstract
-11. Boosting: Testing best Parameter for n_gram> minimum_should_match %
-12. Boosting: Testing best Parameters for publish_time
-13. Adjust Synonyms, is it better?
+    - Which Stemmer is ideal? Snow or Standardstemmer **> mit query.py**
+2. BM25: Which Parameters are the best? (in Abstract & Title) **> mit query.py**
+3. DFR: Which Parameters are the best? ( in Abstract) **> mit query_abstract.py**
+4. LMJ: Which Paramameters are the best? (in Abstract & Title) **> mit query.py**
+5. Similarity Module Testing for Title: Which is best? (BM25 vs. LMJ Short, vs TFIDF) **> mit query_title.py**
+6. Similarity Module Testing for Abstract: (BM25 vs. DFR vs. LMJ Short vs TFIDF) **> mit query_abstract.py**
+7. **Put Together best results**
+8. Boosting: Testing best Parameters for title  **> mit query_title.py**
+9. Boosting: Testing best Parameters for abstract **> mit query_abstract.py**
+10. Boosting: Testing best Parameter for n_gram> minimum_should_match % **> mit query.py**
+11. Boosting: Testing best Parameters for publish_time **> mit query.py**
+12. **Put Together best boosting Parameters**
+13. Adjust Synonyms, is it better? **> mit query.py**
+
+Arbeitspaket 1: 1
+Arbeitspaket 2: 2, 3, 4
+Arbeitspaket 3: 5, 6
+Arbeitspaket 4: 7
+Arbeitspaket 5: 8, 9, 10, 11
+Arbeitspaket 6: 12
+Arbeitspaket 7: 13
