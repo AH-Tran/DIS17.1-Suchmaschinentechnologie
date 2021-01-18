@@ -45,7 +45,7 @@ In Final_Build/query.py
 - title.analysis
 - title.keyword
 - title.ngram
-    - minimum_should_match: xx%
+    - minimum_should_match: **80%**
 - publish_time
-    - Since 2020 -> 1.2
-    -Before 2020 -> 0.8
+    - Since 2020 -> **1.2**
+    -Before 2020 -> **0.8**
