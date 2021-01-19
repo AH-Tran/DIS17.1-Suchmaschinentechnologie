@@ -13,7 +13,7 @@ index_name= "covid_index"
 if es.indices.exists(index_name):
     es.indices.delete(index=index_name)
 
-with open("./Final_Build/synonyms_bearbeitet.txt") as f:
+with open("synonyms_bearbeitet.txt") as f:
     content = f.readlines()
 # you may also want to remove whitespace characters like `\n` at the end of each line
 content = [x.strip() for x in content]
@@ -195,7 +195,7 @@ es.indices.analyze(index=index_name, ignore=400, body=doc_settings)
 
 ## Index Documents
 print("Inserting Metadata into Index...")
-with open("./Final_Build/metadata_update.csv", "r", encoding="utf8") as f:
+with open("metadata_update.csv", "r", encoding="utf8") as f:
     reader = csv.DictReader(f)
     helpers.bulk(es, reader, index=index_name,raise_on_error=False, stats_only=False)
 print("Insert Complete! Pipeline end!")
