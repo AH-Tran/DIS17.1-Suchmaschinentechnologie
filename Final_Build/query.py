@@ -31,7 +31,7 @@ def import_querys(path):
                                 "multi_match": {
                                     "query": query_list[i],
                                     "analyzer": "query_analyzer",
-                                    "fields": ["title.analysis^2", "title^0.8", "title.keyword^10"]},
+                                    "fields": ["title.analysis^1.5", "title^1", "title.keyword^5"]},
                                 "multi_match": {
                                     "query": query_list[i],
                                     "analyzer": "query_analyzer",
@@ -41,7 +41,8 @@ def import_querys(path):
                                 "multi_match": {
                                     "query": query_list[i],
                                     "analyzer": "query_analyzer",
-                                    "fields": "abstract"}
+                                    "fields": "abstract",
+                                    "boost": 8}
                             }]}},
                     "should": [
                         {
