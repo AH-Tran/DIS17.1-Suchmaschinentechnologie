@@ -27,15 +27,13 @@ def import_querys(path):
                 "bool": {
                     "must": {
                         "bool": {
-                            "should": [
-                                {
+
+                            "should":[ {
                                 "multi_match": {
                                     "query": query_list[i],
                                     "analyzer": "query_analyzer",
-                                    "fields": ["title.analysis^1.5", "title^1", "title.keyword^5"]
-                                    }
-                                },
-                                {
+                                    "fields": ["title.analysis^1.5", "title^1", "title.keyword^5"]},
+
                                 "multi_match": {
                                     "query": query_list[i],
                                     "analyzer": "query_analyzer",
@@ -48,13 +46,8 @@ def import_querys(path):
                                     "query": query_list[i],
                                     "analyzer": "query_analyzer",
                                     "fields": "abstract",
-                                    "boost": 8
-                                    }
-                            
-                                    }
-                                ]
-                            }
-                        },
+                                    "boost": 8}
+                            }]}},
                     "should": [
                         {
                             "range": {
