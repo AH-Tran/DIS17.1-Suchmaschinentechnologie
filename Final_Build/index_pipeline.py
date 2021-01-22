@@ -13,7 +13,7 @@ index_name= "covid_index"
 if es.indices.exists(index_name):
     es.indices.delete(index=index_name)
 
-with open("synonyms_bearbeitet.txt") as f:
+with open("synonyms_final.txt") as f:
     content = f.readlines()
 # you may also want to remove whitespace characters like `\n` at the end of each line
 content = [x.strip() for x in content]
@@ -56,7 +56,7 @@ doc_settings = {
               "keyword_list": {
                 "type": "keyword_marker",
                 "ignore_case": True,
-                "keywords": ["covid-19", "sars-cov-2", "sars-cov", "2019-ncov",
+                "keywords": ["Vitamin D", "covid-19", "sars-cov-2", "sars-cov", "2019-ncov",
                          "united states", "united kingdom", "hong kong", "united arab emirates",
                          "non-social", "african-american",
                           "mrna ", "ace inhibitor", "enzyme inhibitors", "blood type", "angiotensin-converting", "clinical signs", "super spreaders", "hand sanitizer", "alcohol sanitizer"]#

@@ -2,7 +2,7 @@ from elasticsearch import Elasticsearch
 import xml.etree.ElementTree as ET
 import json
 
-path = './Final_Build/topics-rnd5_covid-complete.xml'
+path = 'topics-rnd5_covid-complete.xml'
 collection_name = "covid_index"
 
 print("Defining Query...")
@@ -27,17 +27,21 @@ def import_querys(path):
                 "bool": {
                     "must": {
                         "bool": {
+
                             "should":[ {
                                 "multi_match": {
                                     "query": query_list[i],
                                     "analyzer": "query_analyzer",
                                     "fields": ["title.analysis^1.5", "title^1", "title.keyword^5"]},
+
                                 "multi_match": {
                                     "query": query_list[i],
                                     "analyzer": "query_analyzer",
                                     "fields": "title.ngram^0.5",
                                     "minimum_should_match": "80%"
+                                    }
                                 },
+                                {
                                 "multi_match": {
                                     "query": query_list[i],
                                     "analyzer": "query_analyzer",
@@ -95,7 +99,7 @@ def search(collection_index, formatted_query_list):
                 liste_strings.append(string)
             else:
                 continue
-    myfile = open("./Final_Build/result_files/results_001_snowstem.txt", 'w', encoding="utf-8", newline='\n')
+    myfile = open("results_001_synonyms_final.txt", 'w', encoding="utf-8", newline='\n')
 
     for i in range(len(liste_strings)):
         myfile.write(liste_strings[i] + "\n")
