@@ -32,7 +32,7 @@ def import_querys(path):
                                 "multi_match": {
                                     "query": query_list[i],
                                     "analyzer": "query_analyzer",
-                                    "fields": ["title.analysis^2", "title^0.8", "title.keyword^10"]
+                                    "fields": ["title.analysis^1.5", "title^1", "title.keyword^5"]
                                     }
                                 },
                                 {
@@ -47,7 +47,9 @@ def import_querys(path):
                                 "multi_match": {
                                     "query": query_list[i],
                                     "analyzer": "query_analyzer",
-                                    "fields": "abstract"}
+                                    "fields": "abstract",
+                                    "boost": 8
+                                    }
                             
                                     }
                                 ]
@@ -104,7 +106,7 @@ def search(collection_index, formatted_query_list):
                 liste_strings.append(string)
             else:
                 continue
-    myfile = open("results_001_boosting5.txt", 'w', encoding="utf-8", newline='\n')
+    myfile = open("results_001_synonyms_final.txt", 'w', encoding="utf-8", newline='\n')
 
     for i in range(len(liste_strings)):
         myfile.write(liste_strings[i] + "\n")
