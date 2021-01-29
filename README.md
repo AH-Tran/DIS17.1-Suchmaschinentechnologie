@@ -23,7 +23,7 @@
 	- [X] Get Search Result from Elastic
 	- [X] Transform Result into trec_eval format
 	- [X] Union the results into one result file
-	- [ ] Evaluate result file with trec_eval
+	- [X] Evaluate result file with trec_eval
 
 ###  3. How to improve Rankings
 - [X] Indexing
@@ -37,7 +37,7 @@
 		- [_] NLTK library [https://www.nltk.org/](https://www.nltk.org/)
 	- [X] Vereinigen mit nltk_stopwords.txt
 	- [X] Inverse Application of diffferent stopword_lists for different languages
-- [ ] Thesauri (Synonym, Polysemi)
+- [X] Thesauri (Synonym, Polysemi)
 	- [X] [https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-tokenfilter.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-tokenfilter.html)
 	- [X] [https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-graph-tokenfilter.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-graph-tokenfilter.html)
 - [X] Tokenization
