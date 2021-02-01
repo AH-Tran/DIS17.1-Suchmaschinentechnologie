@@ -32,9 +32,9 @@
 	- [X] Most frequent words
 	- [X] Most rare words with high frequency in single documents
 	- [X] Stopword_list for different languages
-		- [_] Identify Languages with [https://github.com/saffsd/langid.py](https://github.com/saffsd/langid.py)
-		- [_] NLP Tool [https://spacy.io/](spacy)
-		- [_] NLTK library [https://www.nltk.org/](https://www.nltk.org/)
+		- [X] Identify Languages with [https://github.com/saffsd/langid.py](https://github.com/saffsd/langid.py)
+		- [X] NLP Tool [https://spacy.io/](spacy)
+		- [X] NLTK library [https://www.nltk.org/](https://www.nltk.org/)
 	- [X] Vereinigen mit nltk_stopwords.txt
 	- [X] Inverse Application of diffferent stopword_lists for different languages
 - [X] Thesauri (Synonym, Polysemi)
