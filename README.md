@@ -1,6 +1,6 @@
 # Readme_Masterfile 
 ### 0- TO DO
-- [ ] [https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-custom-analyzer.html]
+- [X] [https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-custom-analyzer.html]
 	- [X] Read: Custom_analyzer for Tokens, Filters, ETC
 	- [X] Create Index_pipeline.py for indexing metadata.csv with Custom_analyzer 
 	- [X] Apply Custom_analyzer to Querybuilder
@@ -17,13 +17,13 @@
 - [x] Evaluate search results with trec_eval
 
 ### 2. Further Development
-- [ ] Apply **3. How to improve Rankings**
-- [ ] Automate with Python + Jupiter Notebook
+- [X] Apply **3. How to improve Rankings**
+- [X] Automate with Python + Jupiter Notebook
 	- [X] Query to Elastic
 	- [X] Get Search Result from Elastic
 	- [X] Transform Result into trec_eval format
 	- [X] Union the results into one result file
-	- [ ] Evaluate result file with trec_eval
+	- [X] Evaluate result file with trec_eval
 
 ###  3. How to improve Rankings
 - [X] Indexing
@@ -32,32 +32,32 @@
 	- [X] Most frequent words
 	- [X] Most rare words with high frequency in single documents
 	- [X] Stopword_list for different languages
-		- [_] Identify Languages with [https://github.com/saffsd/langid.py](https://github.com/saffsd/langid.py)
-		- [_] NLP Tool [https://spacy.io/](spacy)
-		- [_] NLTK library [https://www.nltk.org/](https://www.nltk.org/)
-	- [ ] Vereinigen mit nltk_stopwords.txt
-	- [ ] Inverse Application of diffferent stopword_lists for different languages
-- [ ] Thesauri (Synonym, Polysemi)
-	- [ ] [https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-tokenfilter.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-tokenfilter.html)
-	- [ ] [https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-graph-tokenfilter.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-graph-tokenfilter.html)
-- [ ] Tokenization
-	- [ ] first 10(?) tokenz sum up most of the text
-	- [ ] Zipfl-Curve
-	- [ ] [https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-tokenizers.htmlt](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-tokenizers.htmlt)
-- [ ] Casefolding
-	- [ ] [https://drowning.gitbooks.io/elasticsearch/content/220_Token_normalization/40_Case_folding.html](https://drowning.gitbooks.io/elasticsearch/content/220_Token_normalization/40_Case_folding.html)
-- [ ] Stemming
-	- [ ] -   [https://www.elastic.co/guide/en/elasticsearch/reference/current/stemming.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/stemming.html)
-- [ ] Weights
-	- [ ] Genetic Algorithm
+		- [X] Identify Languages with [https://github.com/saffsd/langid.py](https://github.com/saffsd/langid.py)
+		- [X] NLP Tool [https://spacy.io/](spacy)
+		- [X] NLTK library [https://www.nltk.org/](https://www.nltk.org/)
+	- [X] Vereinigen mit nltk_stopwords.txt
+	- [X] Inverse Application of diffferent stopword_lists for different languages
+- [X] Thesauri (Synonym, Polysemi)
+	- [X] [https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-tokenfilter.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-tokenfilter.html)
+	- [X] [https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-graph-tokenfilter.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-graph-tokenfilter.html)
+- [X] Tokenization
+	- [X] first 10(?) tokenz sum up most of the text
+	- [X] Zipfl-Curve
+	- [X] [https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-tokenizers.htmlt](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-tokenizers.htmlt)
+- [X] Casefolding
+	- [X] [https://drowning.gitbooks.io/elasticsearch/content/220_Token_normalization/40_Case_folding.html](https://drowning.gitbooks.io/elasticsearch/content/220_Token_normalization/40_Case_folding.html)
+- [X] Stemming
+	- [X] -   [https://www.elastic.co/guide/en/elasticsearch/reference/current/stemming.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/stemming.html)
+- [X] Weights
+	- [X] Genetic Algorithm
 ### 4. Documentation
 Document development with LateX
-- [ ] General Project Structure
-- [ ] Approach and Models to improve Results
-- [ ] Evaluation Results
-- [ ] Discussion of Results
-- [ ] Future Improvement
-- [ ] Literature & References
+- [X] General Project Structure
+- [X] Approach and Models to improve Results
+- [X] Evaluation Results
+- [X] Discussion of Results
+- [X] Future Improvement
+- [X] Literature & References
 
 **Overleaf Latex Project:**  
 https://www.overleaf.com/project/5f881fd0d2a2ac0001ba9af3  
