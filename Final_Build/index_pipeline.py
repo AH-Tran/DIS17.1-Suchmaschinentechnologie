@@ -3,12 +3,20 @@ from elasticsearch.helpers import bulk
 from datetime import datetime
 import os, uuid
 import pandas as pd
-import csv, itertools, json
-import requests
+import json
+import requests 
+import sys
+import jsonlines
 
+# json files directory
+directory = 'D:\Lilias\DIS17.1-Suchmaschinentechnologie\livivo\documents' 
 ## Connect to Elasticsearch
+res = requests.get('http://localhost:9200')
+
 es = Elasticsearch([{"host": "localhost", "port": 9200}])
-index_name= "covid_index"
+
+index_name= "livivo_index"
+
 ## Check if Index already exists
 if es.indices.exists(index_name):
     es.indices.delete(index=index_name)
@@ -21,7 +29,7 @@ for i in content:
     i.replace("_", " ")
 #print(content)
 
-#content =["coronavirus, sars-cov-2, sars-cov2, sars cov 2,covid19, covid-19, covid 19, covid" ] 
+
 print("Configuring Index Settings...")
 ## index settings: mapping for publish_time
 doc_settings = {
@@ -95,7 +103,6 @@ doc_settings = {
                                 "keyword_list",
                                "stop",
                                "asciifolding",
-                               "english_stemmer"
                                ],
                     "char_filter": ["covid_char_filter"]
                 },
@@ -110,12 +117,9 @@ doc_settings = {
                 "query_analyzer":{
                     "type": "custom",
                     "tokenizer": "standard",
-                    "stopwords": "_english",
-                    "filter": ["lowercase",
-                               "keyword_list",
+                    "filter": ["keyword_list",
                                "stop",
-                               "asciifolding",
-                               "english_stemmer"
+                               "asciifolding"
                                ],
                     "char_filter": ["covid_char_filter"]
                     }
@@ -153,7 +157,7 @@ doc_settings = {
 
     "mappings": {
         "properties": {
-            "title": { 
+            "TITLE": { 
                 "type": "text",
                 "fields": {
                     "analysis": { 
@@ -171,7 +175,7 @@ doc_settings = {
                     }
                 }
             },
-            "abstract": {
+            "ABSTRACT": {
                 "type": "text",
                 "analyzer": "covid_analyzer",
                 "similarity": "DFR_similarity"
@@ -194,8 +198,35 @@ es.indices.create(index=index_name, ignore=400, body=doc_settings)
 es.indices.analyze(index=index_name, ignore=400, body=doc_settings)
 
 ## Index Documents
+"""
+def load_json(directory):
+    " Use a generator, no need to load all in memory"
+    for filename in os.listdir(directory):
+        if filename.endswith('.jsonl'):
+            fullpath = os.path.join(directory, filename)
+            with open(fullpath,'r', encoding= 'ascii') as open_file:
+                reader = jsonlines.Reader(open_file)
+                print(reader)
+helpers.bulk(es, load_json("D:\Lilias\DIS17.1-Suchmaschinentechnologie\livivo\documents"), index=index_name, raise_on_error=False, stats_only=False)
+"""
+
 print("Inserting Metadata into Index...")
-with open("metadata_update.csv", "r", encoding="utf8") as f:
-    reader = csv.DictReader(f)
+"""
+
+i = 1
+for filename in os.listdir('D:\Lilias\DIS17.1-Suchmaschinentechnologie\livivo'):
+    if filename.endswith(".jsonl"):
+        fullpath = os.path.join(directory, filename)
+        f = open(fullpath)
+        docket_content = f.read()
+        #sending data into elasticsearch
+        es.bulk(index = index_name, ignore = 400, doc_type = 'docket', id = i, body = json.loads(docket_content))
+        i = i + 1
+"""
+
+## Index Documents
+print("Inserting Metadata into Index...")
+with open("D:\Lilias\DIS17.1-Suchmaschinentechnologie\livivo\documents\livivo_testset.jsonl", "r", encoding="utf8") as f:
+    reader = jsonlines.Reader(f)
     helpers.bulk(es, reader, index=index_name,raise_on_error=False, stats_only=False)
 print("Insert Complete! Pipeline end!")
