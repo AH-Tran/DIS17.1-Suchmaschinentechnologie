@@ -4,7 +4,7 @@ import json
 import jsonlines
 import re
 
-path = 'D:\Lilias\DIS17.1-Suchmaschinentechnologie\livivo\candidates\livivo_hq_test_100.jsonl'
+path = 'D:\Creation\Programming\candidates\livivo_hq_test_100.jsonl'
 
 collection_name = "livivo_index"
 
@@ -14,25 +14,29 @@ def import_querys(path):
     with open(path, 'r', encoding= 'utf-8') as f:
         queries = jsonlines.Reader(f)
         for i in queries:
-            #print(re.sub(r'([a-z]+)', r'(\1)', i['qstr']))
-            query_list.append(re.sub(r'([a-z]+)', r'(\1)', i['qstr']))
+            #query_list.append(re.sub(r'([a-z]+)', r'(\1)', i['qstr']))
+            query_list.append(i['qstr'].replace('AND', '+').replace('OR','|'))
             print(query_list)
-
 
     formatted_query_list = []
     for i in range(100):
     
         query = {
             "query": {
-                "query_string": {
+                "simple_query_string": {
                     "query": query_list[i],
                     "analyzer": "query_analyzer",
-                    "default_field": ["TITLE.analysis", "TITLE", "TITLE.keyword"]},
+                    "fields": ["TITLE.analysis", "TITLE", "TITLE.keyword"]},
                 
-                 "query_string": {
+                 "simple_query_string": {
                      "query": query_list[i],
                      "analyzer": "query_analyzer",
-                     "default_field": "ABSTRACT"}}
+                     "fields": ["ABSTRACT"]},
+                 
+                 "simple_query_string": {
+                     "query": query_list[i],
+                     "analyzer": "query_analyzer",
+                     "fields": ["MESH"]}}
                 
 
             }
@@ -46,7 +50,7 @@ def import_querys(path):
 
 liste = import_querys(path)
 
-path2 = 'D:\Lilias\DIS17.1-Suchmaschinentechnologie\livivo\candidates\livivo_hq_test_100_candidates.jsonl'
+path2 = 'D:\Creation\Programming\candidates\livivo_hq_test_100_candidates.jsonl'
 
 # print(liste[0])
 print("Post Query...")

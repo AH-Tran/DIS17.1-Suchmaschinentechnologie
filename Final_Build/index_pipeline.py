@@ -9,7 +9,7 @@ import sys
 import jsonlines
 
 # json files directory
-directory = 'D:\Lilias\DIS17.1-Suchmaschinentechnologie\livivo\documents' 
+directory = 'D:\Creation\Programming\documents' 
 ## Connect to Elasticsearch
 res = requests.get('http://localhost:9200')
 
@@ -21,7 +21,7 @@ index_name= "livivo_index"
 if es.indices.exists(index_name):
     es.indices.delete(index=index_name)
 
-with open("synonyms_final.txt") as f:
+with open(".\Final_Build\synonyms_final.txt") as f:
     content = f.readlines()
 # you may also want to remove whitespace characters like `\n` at the end of each line
 content = [x.strip() for x in content]
@@ -226,7 +226,7 @@ for filename in os.listdir('D:\Lilias\DIS17.1-Suchmaschinentechnologie\livivo'):
 
 ## Index Documents
 print("Inserting Metadata into Index...")
-with open("D:\Lilias\DIS17.1-Suchmaschinentechnologie\livivo\documents\livivo_testset.jsonl", "r", encoding="utf8") as f:
+with open("D:\Creation\Programming\documents\livivo_nlm.jsonl", "r", encoding="utf8") as f:
     reader = jsonlines.Reader(f)
     helpers.bulk(es, reader, index=index_name,raise_on_error=False, stats_only=False)
 print("Insert Complete! Pipeline end!")

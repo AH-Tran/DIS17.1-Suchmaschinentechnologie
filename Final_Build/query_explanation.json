@@ -1,0 +1,337 @@
+query: {'query': {'simple_query_string': {'query': 'Heterogeneous +nuclear', 'fields': ['TITLE^5', 'ABSTRACT'], 'default_operator': 'and'}}}
+{
+    "_index": "livivo_index",
+    "_type": "_doc",
+    "_id": "SrbuxHcBuJ4vHEz_lfTq",
+    "matched": true,
+    "explanation": {
+        "value": 102.014496,
+        "description": "sum of:",
+        "details": [
+            {
+                "value": 55.918015,
+                "description": "sum of:",
+                "details": [
+                    {
+                        "value": 51.17134,
+                        "description": "weight(TITLE:heterogeneous in 2) [PerFieldSimilarity], result of:",
+                        "details": [
+                            {
+                                "value": 51.17134,
+                                "description": "score(freq=2.0), computed as boost * idf * tf from:",
+                                "details": [
+                                    {
+                                        "value": 11.0,
+                                        "description": "boost",
+                                        "details": []
+                                    },
+                                    {
+                                        "value": 7.5674124,
+                                        "description": "idf, computed as log(1 + (N - n + 0.5) / (n + 0.5)) from:",
+                                        "details": [
+                                            {
+                                                "value": 15,
+                                                "description": "n, number of documents containing term",
+                                                "details": []
+                                            },
+                                            {
+                                                "value": 29978,
+                                                "description": "N, total number of documents with field",
+                                                "details": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "value": 0.6147332,
+                                        "description": "tf, computed as freq / (freq + k1 * (1 - b + b * dl / avgdl)) from:",
+                                        "details": [
+                                            {
+                                                "value": 2.0,
+                                                "description": "freq, occurrences of term within document",
+                                                "details": []
+                                            },
+                                            {
+                                                "value": 1.2,
+                                                "description": "k1, term saturation parameter",
+                                                "details": []
+                                            },
+                                            {
+                                                "value": 0.75,
+                                                "description": "b, length normalization parameter",
+                                                "details": []
+                                            },
+                                            {
+                                                "value": 11.0,
+                                                "description": "dl, length of field",
+                                                "details": []
+                                            },
+                                            {
+                                                "value": 10.383414,
+                                                "description": "avgdl, average length of field",
+                                                "details": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "value": 4.7466717,
+                        "description": "weight(ABSTRACT:heterogeneous in 2) [PerFieldSimilarity], result of:",
+                        "details": [
+                            {
+                                "value": 4.7466717,
+                                "description": "score(DFRSimilarity, freq=1.0), computed as boost * basicModel.score(stats, tfn) * afterEffect.score(stats, tfn) from:",
+                                "details": [
+                                    {
+                                        "value": 1.2967739,
+                                        "description": "NormalizationZ, computed as tf * Math.pow(avgfl / fl, z) from:",
+                                        "details": [
+                                            {
+                                                "value": 1.0,
+                                                "description": "tf, number of occurrences of term in the document",
+                                                "details": []
+                                            },
+                                            {
+                                                "value": 228.28925,
+                                                "description": "avgfl, average length of field across all documents",
+                                                "details": []
+                                            },
+                                            {
+                                                "value": 96.0,
+                                                "description": "fl, field length of the document",
+                                                "details": []
+                                            },
+                                            {
+                                                "value": 0.3,
+                                                "description": "z, relates to specificity of the language",
+                                                "details": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "value": 9.394304,
+                                        "description": "BasicModelG, computed as log2(lambda + 1) + tfn * log2((1 + lambda) / lambda) from:",
+                                        "details": [
+                                            {
+                                                "value": 1.2967739,
+                                                "description": "tfn, normalized term frequency",
+                                                "details": []
+                                            },
+                                            {
+                                                "value": 0.006673364,
+                                                "description": "lambda, computed as F / (N + F) from:",
+                                                "details": [
+                                                    {
+                                                        "value": 93.0,
+                                                        "description": "F, total number of occurrences of term across all docs + 1",
+                                                        "details": []
+                                                    },
+                                                    {
+                                                        "value": 13843.0,
+                                                        "description": "N, total number of documents with field",
+                                                        "details": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "value": 0.50527126,
+                                        "description": "AfterEffectB, computed as (F + 1) / (n * (tfn + 1)) from:",
+                                        "details": [
+                                            {
+                                                "value": 1.2967739,
+                                                "description": "tfn, normalized term frequency",
+                                                "details": []
+                                            },
+                                            {
+                                                "value": 92,
+                                                "description": "F, total number of occurrences of term across all documents + 1",
+                                                "details": []
+                                            },
+                                            {
+                                                "value": 80,
+                                                "description": "n, number of documents containing term + 1",
+                                                "details": []
+                                            },
+                                            {
+                                                "value": 1.2967739,
+                                                "description": "tfn, normalized term frequency",
+                                                "details": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "value": 46.096485,
+                "description": "sum of:",
+                "details": [
+                    {
+                        "value": 41.529816,
+                        "description": "weight(TITLE:nuclear in 2) [PerFieldSimilarity], result of:",
+                        "details": [
+                            {
+                                "value": 41.529816,
+                                "description": "score(freq=2.0), computed as boost * idf * tf from:",
+                                "details": [
+                                    {
+                                        "value": 11.0,
+                                        "description": "boost",
+                                        "details": []
+                                    },
+                                    {
+                                        "value": 6.1415873,
+                                        "description": "idf, computed as log(1 + (N - n + 0.5) / (n + 0.5)) from:",
+                                        "details": [
+                                            {
+                                                "value": 64,
+                                                "description": "n, number of documents containing term",
+                                                "details": []
+                                            },
+                                            {
+                                                "value": 29978,
+                                                "description": "N, total number of documents with field",
+                                                "details": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "value": 0.6147332,
+                                        "description": "tf, computed as freq / (freq + k1 * (1 - b + b * dl / avgdl)) from:",
+                                        "details": [
+                                            {
+                                                "value": 2.0,
+                                                "description": "freq, occurrences of term within document",
+                                                "details": []
+                                            },
+                                            {
+                                                "value": 1.2,
+                                                "description": "k1, term saturation parameter",
+                                                "details": []
+                                            },
+                                            {
+                                                "value": 0.75,
+                                                "description": "b, length normalization parameter",
+                                                "details": []
+                                            },
+                                            {
+                                                "value": 11.0,
+                                                "description": "dl, length of field",
+                                                "details": []
+                                            },
+                                            {
+                                                "value": 10.383414,
+                                                "description": "avgdl, average length of field",
+                                                "details": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "value": 4.566668,
+                        "description": "weight(ABSTRACT:nuclear in 2) [PerFieldSimilarity], result of:",
+                        "details": [
+                            {
+                                "value": 4.566668,
+                                "description": "score(DFRSimilarity, freq=1.0), computed as boost * basicModel.score(stats, tfn) * afterEffect.score(stats, tfn) from:",
+                                "details": [
+                                    {
+                                        "value": 1.2967739,
+                                        "description": "NormalizationZ, computed as tf * Math.pow(avgfl / fl, z) from:",
+                                        "details": [
+                                            {
+                                                "value": 1.0,
+                                                "description": "tf, number of occurrences of term in the document",
+                                                "details": []
+                                            },
+                                            {
+                                                "value": 228.28925,
+                                                "description": "avgfl, average length of field across all documents",
+                                                "details": []
+                                            },
+                                            {
+                                                "value": 96.0,
+                                                "description": "fl, field length of the document",
+                                                "details": []
+                                            },
+                                            {
+                                                "value": 0.3,
+                                                "description": "z, relates to specificity of the language",
+                                                "details": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "value": 7.0328217,
+                                        "description": "BasicModelG, computed as log2(lambda + 1) + tfn * log2((1 + lambda) / lambda) from:",
+                                        "details": [
+                                            {
+                                                "value": 1.2967739,
+                                                "description": "tfn, normalized term frequency",
+                                                "details": []
+                                            },
+                                            {
+                                                "value": 0.024316324,
+                                                "description": "lambda, computed as F / (N + F) from:",
+                                                "details": [
+                                                    {
+                                                        "value": 345.0,
+                                                        "description": "F, total number of occurrences of term across all docs + 1",
+                                                        "details": []
+                                                    },
+                                                    {
+                                                        "value": 13843.0,
+                                                        "description": "N, total number of documents with field",
+                                                        "details": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "value": 0.6493366,
+                                        "description": "AfterEffectB, computed as (F + 1) / (n * (tfn + 1)) from:",
+                                        "details": [
+                                            {
+                                                "value": 1.2967739,
+                                                "description": "tfn, normalized term frequency",
+                                                "details": []
+                                            },
+                                            {
+                                                "value": 344,
+                                                "description": "F, total number of occurrences of term across all documents + 1",
+                                                "details": []
+                                            },
+                                            {
+                                                "value": 231,
+                                                "description": "n, number of documents containing term + 1",
+                                                "details": []
+                                            },
+                                            {
+                                                "value": 1.2967739,
+                                                "description": "tfn, normalized term frequency",
+                                                "details": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
+explanation description: sum of:
+query match: True
