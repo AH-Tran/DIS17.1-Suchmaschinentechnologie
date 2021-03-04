@@ -1,0 +1,7 @@
+os
+uuid
+pandas
+jsonlines
+requests
+sys
+elasticsearch

@@ -8,21 +8,20 @@ import requests
 import sys
 import jsonlines
 
-## Files directory
-directory = 'D:\Creation\Programming\documents'
-synonyms_txt = '.\Final_Build\synonyms_final.txt'
+# json files directory
+directory = 'D:\Creation\Programming\documents' 
 ## Connect to Elasticsearch
 res = requests.get('http://localhost:9200')
 
 es = Elasticsearch([{"host": "localhost", "port": 9200}])
 
-index_name= "livivo_index_2json"
+index_name= "livivo_index"
 
 ## Check if Index already exists
 if es.indices.exists(index_name):
     es.indices.delete(index=index_name)
 
-with open(synonyms_txt) as f:
+with open(".\Final_Build\synonyms_final.txt") as f:
     content = f.readlines()
 # you may also want to remove whitespace characters like `\n` at the end of each line
 content = [x.strip() for x in content]
@@ -61,6 +60,18 @@ doc_settings = {
                 "english_stemmer" : {
                     "type" : "stemmer",
                     "language" : "english"
+                },
+                "german_stop": {
+                "type":       "stop",
+                "stopwords":  "_german_" 
+                },
+                "german_keywords": {
+                "type":       "keyword_marker",
+                "keywords":   ["Beispiel"] 
+                },
+                "german_stemmer": {
+                "type":       "stemmer",
+                "language":   "light_german"
                 },
               "keyword_list": {
                 "type": "keyword_marker",
@@ -107,6 +118,15 @@ doc_settings = {
                                ],
                     "char_filter": ["covid_char_filter"]
                 },
+                "german_analyzer": {
+                    "tokenizer":  "standard",
+                    "filter": [
+                        "lowercase",
+                        "german_stop",
+                        "german_keywords",
+                        "german_stemmer"
+                    ]
+                    },
                 "ngram_analyzer": {
                     "type":      "custom",
                     "tokenizer": "standard",
@@ -119,6 +139,7 @@ doc_settings = {
                     "type": "custom",
                     "tokenizer": "standard",
                     "filter": ["keyword_list",
+                                "lowercase",
                                "stop",
                                "asciifolding"
                                ],
@@ -224,31 +245,10 @@ for filename in os.listdir('D:\Lilias\DIS17.1-Suchmaschinentechnologie\livivo'):
         es.bulk(index = index_name, ignore = 400, doc_type = 'docket', id = i, body = json.loads(docket_content))
         i = i + 1
 """
-"""
+
 ## Index Documents
 print("Inserting Metadata into Index...")
 with open("D:\Creation\Programming\documents\livivo_nlm.jsonl", "r", encoding="utf8") as f:
     reader = jsonlines.Reader(f)
     helpers.bulk(es, reader, index=index_name,raise_on_error=False, stats_only=False)
 print("Insert Complete! Pipeline end!")
-"""
-"""
-for filename in os.listdir(directory):
-    if filename.endswith(".jsonl"):
-        with open(filename, "r", encoding="utf-8") as f:
-            reader = jsonlines.Reader(f)
-            helpers.bulk(es, reader, ignore = 400,index=index_name,raise_on_error=False, stats_only=False)
-"""
-#json_docs = []
-for filename in os.listdir(directory):
-    if filename.endswith('.jsonl'):
-        fullpath=os.path.join(directory, filename)
-        with open(fullpath, "r", encoding="utf8") as open_file:
-            reader = jsonlines.Reader(open_file)
-            #json_docs.append(jsonlines.Reader(open_file))
-            helpers.bulk(es, reader, ignore = 400,index=index_name,raise_on_error=False, stats_only=False)
-
-
-#print (json_docs)
-#es.bulk(es, ES_TYPE, json_docs) 
-#helpers.bulk(es, json_docs, ignore = 400,index=index_name,raise_on_error=False, stats_only=False)

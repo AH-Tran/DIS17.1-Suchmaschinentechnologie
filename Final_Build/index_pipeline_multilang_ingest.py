@@ -1,5 +1,6 @@
 from elasticsearch import Elasticsearch, helpers
 from elasticsearch.helpers import bulk
+from elasticsearch.client.ingest import IngestClient
 from datetime import datetime
 import os, uuid
 import pandas as pd
@@ -8,21 +9,20 @@ import requests
 import sys
 import jsonlines
 
-## Files directory
-directory = 'D:\Creation\Programming\documents'
-synonyms_txt = '.\Final_Build\synonyms_final.txt'
+# json files directory
+directory = 'D:\Creation\Programming\documents' 
 ## Connect to Elasticsearch
 res = requests.get('http://localhost:9200')
 
 es = Elasticsearch([{"host": "localhost", "port": 9200}])
 
-index_name= "livivo_index_2json"
+index_name= "livivo_index_test"
 
 ## Check if Index already exists
 if es.indices.exists(index_name):
     es.indices.delete(index=index_name)
 
-with open(synonyms_txt) as f:
+with open(".\Final_Build\synonyms_final.txt") as f:
     content = f.readlines()
 # you may also want to remove whitespace characters like `\n` at the end of each line
 content = [x.strip() for x in content]
@@ -31,6 +31,31 @@ for i in content:
 #print(content)
 
 
+## Create Ingest Pipeline
+#if es.ingest.exists(id=language):
+#    es.ingest.delete(id=language)
+"""
+p = IngestClient(es)
+p.put_pipeline(id=language, body={
+    'description': "identify language and assign proper analyzer",
+  "processors": [
+		{
+      "set": {
+        "if": "ctx.LANGUAGE == 'eng'",
+        "field": "title_en",
+        "value": "{{TITLE}}"
+      }
+    },
+	{
+      "set": {
+        "if": "ctx.LANGUAGE == 'deu'",
+        "field": "title_de",
+        "value": "{{TITLE}}"
+      }
+    }
+   ]
+})
+"""
 print("Configuring Index Settings...")
 ## index settings: mapping for publish_time
 doc_settings = {
@@ -61,6 +86,18 @@ doc_settings = {
                 "english_stemmer" : {
                     "type" : "stemmer",
                     "language" : "english"
+                },
+                "german_stop": {
+                "type":       "stop",
+                "stopwords":  "_german_" 
+                },
+                "german_keywords": {
+                "type":       "keyword_marker",
+                "keywords":   ["Beispiel"] 
+                },
+                "german_stemmer": {
+                "type":       "stemmer",
+                "language":   "light_german"
                 },
               "keyword_list": {
                 "type": "keyword_marker",
@@ -94,7 +131,7 @@ doc_settings = {
              },
              #},# INDEX END
             "analyzer": {
-                "covid_analyzer": {
+                "english_analyzer": {
                     "type": "custom",
                     "tokenizer": "standard",
                     "stopwords": "_english",
@@ -107,6 +144,16 @@ doc_settings = {
                                ],
                     "char_filter": ["covid_char_filter"]
                 },
+                "german_analyzer": {
+                    "tokenizer":  "standard",
+                    "stopwords": "_german",
+                    "filter": [
+                        "lowercase",
+                        "german_stop",
+                        "german_keywords",
+                        "german_stemmer"
+                    ]
+                    },
                 "ngram_analyzer": {
                     "type":      "custom",
                     "tokenizer": "standard",
@@ -119,6 +166,7 @@ doc_settings = {
                     "type": "custom",
                     "tokenizer": "standard",
                     "filter": ["keyword_list",
+                                "lowercase",
                                "stop",
                                "asciifolding"
                                ],
@@ -163,7 +211,7 @@ doc_settings = {
                 "fields": {
                     "analysis": { 
                         "type":     "text",
-                        "analyzer": "covid_analyzer",
+                        "analyzer": "english_analyzer",
                         "similarity": "LMJelinekMercer_short"
                     },
                     "ngram": { 
@@ -176,9 +224,17 @@ doc_settings = {
                     }
                 }
             },
+            "title_en" : {
+                "type" : "text",
+                "analyzer" : "english_analyzer"
+                },  
+            "title_de" : {
+                "type" : "text",
+                "analyzer" : "german_analyzer"
+                },
             "ABSTRACT": {
                 "type": "text",
-                "analyzer": "covid_analyzer",
+                "analyzer": "english_analyzer",
                 "similarity": "DFR_similarity"
             },
             "publish_time": {
@@ -196,7 +252,7 @@ print("Index Config Complete!...")
 ## Create Index
 print("Creating Index...")
 es.indices.create(index=index_name, ignore=400, body=doc_settings)
-es.indices.analyze(index=index_name, ignore=400, body=doc_settings)
+#es.indices.analyze(index=index_name, ignore=400, body=doc_settings)
 
 ## Index Documents
 """
@@ -224,31 +280,10 @@ for filename in os.listdir('D:\Lilias\DIS17.1-Suchmaschinentechnologie\livivo'):
         es.bulk(index = index_name, ignore = 400, doc_type = 'docket', id = i, body = json.loads(docket_content))
         i = i + 1
 """
-"""
+
 ## Index Documents
 print("Inserting Metadata into Index...")
-with open("D:\Creation\Programming\documents\livivo_nlm.jsonl", "r", encoding="utf8") as f:
+with open("D:\Creation\Programming\documents\livivo_testset.jsonl", "r", encoding="utf8") as f:
     reader = jsonlines.Reader(f)
     helpers.bulk(es, reader, index=index_name,raise_on_error=False, stats_only=False)
 print("Insert Complete! Pipeline end!")
-"""
-"""
-for filename in os.listdir(directory):
-    if filename.endswith(".jsonl"):
-        with open(filename, "r", encoding="utf-8") as f:
-            reader = jsonlines.Reader(f)
-            helpers.bulk(es, reader, ignore = 400,index=index_name,raise_on_error=False, stats_only=False)
-"""
-#json_docs = []
-for filename in os.listdir(directory):
-    if filename.endswith('.jsonl'):
-        fullpath=os.path.join(directory, filename)
-        with open(fullpath, "r", encoding="utf8") as open_file:
-            reader = jsonlines.Reader(open_file)
-            #json_docs.append(jsonlines.Reader(open_file))
-            helpers.bulk(es, reader, ignore = 400,index=index_name,raise_on_error=False, stats_only=False)
-
-
-#print (json_docs)
-#es.bulk(es, ES_TYPE, json_docs) 
-#helpers.bulk(es, json_docs, ignore = 400,index=index_name,raise_on_error=False, stats_only=False)

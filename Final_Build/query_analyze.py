@@ -10,8 +10,8 @@ collection_name = "livivo_index"
 client = Elasticsearch("http://localhost:9200")
 query = {
             "query": {
-                "simple_query_string" : {
-                    "query": "Heterogeneous + america",
+                "query_string" : {
+                    "query": "(cardiovascular) AND (disease)",
                     "fields": ["TITLE^5", "ABSTRACT"],
                     "default_operator": "and"
                 }
@@ -21,7 +21,7 @@ query = {
 #query = {"query": {"match" : {"string field" : "Object" }}}
 print ("query:", query)
 
-result = Elasticsearch.explain(client, index="livivo_index", id="SrbuxHcBuJ4vHEz_lfTq", body=query)
+result = Elasticsearch.explain(client, index="livivo_index", id="oBL_4ncB1izoGxjRiSJT", body=query)
 #print (json.dumps(result, indent=4))
 
 
